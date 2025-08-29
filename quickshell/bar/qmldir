@@ -1,0 +1,6 @@
+module Taskbar
+Bar 1.0 Bar.qml
+Os 1.0 Os.qml
+OsWorkspaceBar 1.0 OsWorkspaceBar.qml
+TitleBar 1.0 TitleBar.qml
+ClockBar 1.0 ClockBar.qml

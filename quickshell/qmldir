@@ -1,0 +1,5 @@
+Shell 1.0 shell.qml
+TextButton 1.0 TextButton.qml
+singleton Config 1.0 Config.qml
+singleton Time 1.0 Time.qml
+singleton Notifs 1.0 Notifs.qml

@@ -1,0 +1,4 @@
+[ffmpeg/demuxer] video4linux2,v4l2: ioctl(VIDIOC_REQBUFS): Device or resource busy
+[lavf] avformat_open_input() failed
+Failed to recognize file format.
+Exiting... (Errors when loading file)
