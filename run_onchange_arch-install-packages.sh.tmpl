@@ -2,6 +2,6 @@
 #!/bin/bash
 
 echo "Installing arch pacman and aur packages."
-paru -Syu --needed --noconfirm {{ range .packages.arch.aur }}{{.}} {{end}}{{ range .packages.arch.pacman }}{{.}} {{end}}
+yay -Syu --needed --noconfirm {{ range .packages.arch.aur }}{{.}} {{end}}{{ range .packages.arch.pacman }}{{.}} {{end}}
 
 {{ end -}}

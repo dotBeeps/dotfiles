@@ -34,6 +34,9 @@ packages:
       - mesa-demos
       - vulkan-tools
       - qt6pas
+      - steam
+      - starship
+      - uwsm
     aur:
       - quickshell
       - vscodium-bin
@@ -49,9 +52,10 @@ packages:
       - protontricks
       - gamemode
       - xpadneo-dkms
+      - app2unit
+      - paru
   steamdeck:
     pacman:
-      - steam
       - gamescope
     aur:
       - protonplus
