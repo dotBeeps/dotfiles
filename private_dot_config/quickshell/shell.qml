@@ -9,11 +9,11 @@ import Quickshell
 import Quickshell.Wayland
 import "bar"
 import "registration"
-import "media_window"
 import "control"
 import "notifications"
 import qs.config
 import qs.modules.sticker
+import qs.modules.media
 
 
 Scope {

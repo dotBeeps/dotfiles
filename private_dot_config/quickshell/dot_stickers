@@ -1,17 +1,17 @@
 {
-    "currentStickers": [
-        {
-            "instanceId": "some random numbers idk",
-            "locked": false,
-            "onTop": true,
-            "region": {
-                "height": 200,
-                "width": 200,
-                "x": 3603,
-                "y": 1882
-            },
-            "screen": "DP-2",
-            "source": "/home/dot/Pictures/stickers/dotportrait.png"
-        }
-    ]
+  "currentStickers": [
+    {
+      "instanceId": "some random numbers idk",
+      "locked": false,
+      "onTop": true,
+      "region": {
+        "height": 200,
+        "width": 200,
+        "x": 3603,
+        "y": 1882
+      },
+      "screen": "DP-2",
+      "source": "/home/dot/Pictures/stickers/dotportrait.png"
+    }
+  ]
 }

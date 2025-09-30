@@ -4,8 +4,8 @@ import QtQuick.Shapes
 import Quickshell
 import Quickshell.Wayland
 import Quickshell.Widgets
-import "media"
 import qs.config
+import qs.modules.bar
 import "tasks"
 
 PanelWindow {
@@ -127,7 +127,7 @@ PanelWindow {
                     Layout.rightMargin: 10
                 }
 
-                Media {
+                BarPlayerInfo {
                     Layout.fillHeight: true
                     Layout.maximumWidth: 800
                     Layout.preferredWidth: 380

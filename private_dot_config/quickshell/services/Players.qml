@@ -1,5 +1,9 @@
 import Quickshell
 import Quickshell.Services.Mpris
+import QtQuick
+import qs.config
+import qs.modules.common
+import qs.services
 pragma Singleton
 
 Singleton {
@@ -43,5 +47,18 @@ Singleton {
 
     function stop(): void {
         root.activePlayer?.stop();
+    }
+
+    component ActiveArt: ClippingImage {
+        radius: Config.style.rounding.large
+        visible: Players.activePlayer && Players.activePlayer !== null
+        source: Players.activePlayer ? Players.activePlayer.trackArtUrl : ''
+        image.fillMode: Image.PreserveAspectFit
+    }
+
+    component ActiveIcon: ClippingIconImage {
+        implicitSize: 24
+        source: Quickshell.iconPath(Players.activePlayer.desktopEntry)
+        radius: Config.style.rounding.full
     }
 }

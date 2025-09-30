@@ -4,10 +4,10 @@ import Quickshell
 import Quickshell.Wayland
 import Quickshell.Widgets
 import qs.config
-import qs.media_window
 import qs.modules.audio
 import qs.modules.common
 import qs.modules.media
+import qs.modules.media.mediaInfo
 import qs.services
 
 PanelWindow {
