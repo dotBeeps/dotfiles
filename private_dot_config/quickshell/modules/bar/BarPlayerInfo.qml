@@ -16,7 +16,7 @@ Item {
             root.popoutShown = !root.popoutShown;
         }
 
-        contentItem: MediaInfoBar {
+        contentItem: BarPlayerInfoContent {
             id: info
 
             anchors.fill: parent
@@ -39,7 +39,7 @@ Item {
 
     }
 
-    MediaPopout {
+    BarMediaPopout {
         anchors.fill: button
         popoutShown: root.popoutShown
         offsetX: root.x + 8

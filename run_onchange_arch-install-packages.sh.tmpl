@@ -1,0 +1,7 @@
+{{ if eq .chezmoi.osRelease.idLike "arch" -}}
+#!/bin/bash
+
+echo "Installing arch pacman and aur packages."
+paru -Syu --needed --noconfirm {{ range .packages.arch.aur }}{{.}} {{end}}{{ range .packages.arch.pacman }}{{.}} {{end}}
+
+{{ end -}}

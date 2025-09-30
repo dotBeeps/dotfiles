@@ -3,6 +3,7 @@ import Quickshell
 import Quickshell
 import qs.config
 import qs.modules.media
+import qs.modules.media.mediaInfo
 import qs.services
 
 PanelWindow {

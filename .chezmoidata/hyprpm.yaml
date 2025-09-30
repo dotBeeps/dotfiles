@@ -1,0 +1,5 @@
+hyprpm:
+  repos:
+    - https://github.com/Duckonaut/split-monitor-workspaces
+  plugins:
+    - split-monitor-workspaces

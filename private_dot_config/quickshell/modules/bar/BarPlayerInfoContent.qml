@@ -1,7 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
 import qs.config
-import qs.modules.media
 import qs.services
 
 Item {
@@ -15,7 +14,7 @@ Item {
         spacing: Config.style.spacing.sm
         anchors.fill: parent
 
-        ActiveMediaArt {
+        Players.ActiveArt {
             Layout.fillHeight: true
             Layout.rightMargin: 4
             Layout.topMargin: 2
