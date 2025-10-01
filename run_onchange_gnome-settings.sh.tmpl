@@ -1,0 +1,9 @@
+#!/bin/bash
+
+papirus-folders -C pink --theme Papirus-Dark
+gsettings set org.gnome.desktop.interface font-name {{ .theme.gnome.font.interface | quote}}
+gsettings set org.gnome.desktop.interface document-font-name {{ .theme.gnome.font.document | quote}}
+gsettings set org.gnome.desktop.interface monospace-font-name {{ .theme.gnome.font.monospace | quote}}
+gsettings set org.gnome.desktop.interface cursor-theme {{ .theme.gnome.cursor }}
+gsettings set org.gnome.desktop.interface icon-theme {{ .theme.gnome.icons }}
+gsettings set org.gnome.desktop.interface gtk-theme {{ .theme.gnome.legacy }}

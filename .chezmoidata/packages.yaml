@@ -38,6 +38,10 @@ packages:
       - starship
       - uwsm
       - dolphin
+      - breeze
+      - breeze-gtk
+      - breeze-icons
+      - papirus-icon-theme
     aur:
       - quickshell
       - vscodium-bin
@@ -56,6 +60,7 @@ packages:
       - xpadneo-dkms
       - app2unit
       - paru
+      - papirus-folders
   steamdeck:
     aur:
       - protonplus

@@ -1,0 +1,9 @@
+theme:
+  gnome:
+    cursor: Breeze_cursors
+    icons: Papirus-Dark
+    legacy: Breeze-Dark
+    font:
+      interface: Monofur Nerd Font
+      document: Monofur Nerd Font
+      monospace: Monofur Nerd Font Mono
