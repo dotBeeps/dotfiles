@@ -1,19 +1,8 @@
-ORIENTATION=left
 ADAPTIVE_SYNC=1
-# Treat the internal panel as an external monitor
-PANEL_TYPE=external
-
-{{ if eq .chezmoi.hostname "dotdeck" }}
-# Set the specific values allowed for refresh rates
-CUSTOM_REFRESH_RATES=40,50,60
-
-# Set the range of the refresh rate slider in the Steam client
-export STEAM_DISPLAY_REFRESH_LIMITS=40,60
-
 # Specify if you want to enable support for HDR content
 ENABLE_GAMESCOPE_HDR=0
-
-CLIENTCMD="steam -steamos -gamepadui -pipewire-dmabuf"
-
-GAMESCOPECMD="gamescope --mangoapp -W 1280 -H 800 -e --xwayland-count 2"
+{{ if eq .chezmoi.hostname "dotdeck" }}
+OUTPUT_CONNECTOR='*,eDP-1'
 {{ end }}
+
+CLIENTCMD="steam -steamos -pipewire-dmabuf -gamepadui"
