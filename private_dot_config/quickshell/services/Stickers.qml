@@ -2,6 +2,7 @@ import QtQuick
 import Quickshell
 import Quickshell.Io
 pragma Singleton
+import qs.util
 
 Singleton {
     id: root
@@ -20,7 +21,7 @@ Singleton {
     FileView {
         id: fileView
 
-        path: Quickshell.shellPath('.stickers')
+        path: `${Paths.config}/.stickers`
         watchChanges: true
         onFileChanged: reload()
         onLoadFailed: (error) => {

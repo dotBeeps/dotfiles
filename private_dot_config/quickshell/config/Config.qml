@@ -17,7 +17,7 @@ Singleton {
     FileView {
         id: fileView
 
-        path: Quickshell.shellPath('settings.json')
+        path: `${Paths.config}/settings.json`
         watchChanges: true
         onFileChanged: reload()
         onLoadFailed: (error) => {
