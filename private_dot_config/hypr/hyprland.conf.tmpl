@@ -6,8 +6,10 @@ monitor=DP-2,3840x2160@120,0x0,1
 monitor=DP-3,2560x1440@120,-1440x-440,1,transform,3
 monitor=DP-5,1920x1080@120,920x2160,1
 monitor=sunshine,720x1544@120,2840x2400,2
+{{ else if eq .chezmoi.hostname "dotdeck" }}
+monitor={{.hostSettings.primaryScreen}}, preferred, auto, 1, transform, 3
 {{ else }}
-monitor= , preferred, auto, auto
+monitor={{.hostSettings.primaryScreen}}, preferred, auto, auto
 {{ end }}
 
 input {
