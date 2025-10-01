@@ -62,3 +62,4 @@ packages:
       - gamescope-git
       - gamescope-session-git
       - gamescope-session-steam-git
+    pacman:
