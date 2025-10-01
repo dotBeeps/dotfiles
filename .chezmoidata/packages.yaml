@@ -37,6 +37,7 @@ packages:
       - steam
       - starship
       - uwsm
+      - dolphin
     aur:
       - quickshell
       - vscodium-bin
