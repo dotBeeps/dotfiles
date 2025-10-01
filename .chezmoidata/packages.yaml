@@ -56,8 +56,9 @@ packages:
       - app2unit
       - paru
   steamdeck:
-    pacman:
-      - gamescope
     aur:
       - protonplus
       - zenergy-dkms-git
+      - gamescope-git
+      - gamescope-session-git
+      - gamescope-session-steam-git
