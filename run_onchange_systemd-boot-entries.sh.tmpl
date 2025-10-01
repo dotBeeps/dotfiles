@@ -1,0 +1,12 @@
+#!/bin/bash
+
+{{ $kernels := (fromYaml ( includeTemplate "kernels.yaml" )).kernels }}
+{{ $machineid := trim (output "cat" "/etc/machine-id") }}
+{{ $uuid := .rootuuid }}
+{{ range $kernels }}
+{{   $_ := set . "machineid" $machineid }}
+{{   $_ := set . "uuid" $uuid }}
+echo "Creating systemd boot entry for {{ .title }} {{ .version }}"
+sudo /bin/bash -c "echo '{{ includeTemplate "loader-entry" . }}' > /efi/loader/entries/{{ $machineid }}-{{ .version }}.conf"
+{{ end }}
+echo "Finished creating boot entries."

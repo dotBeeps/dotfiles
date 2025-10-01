@@ -1,0 +1,7 @@
+title      {{ .title }}
+version    {{ .version }}
+machine-id {{ .machineid }}
+sort-key   {{ .sort }}-{{ .version }}
+options    nvme_load=YES nowatchdog rw root=UUID={{ .uuid }} systemd.machine_id={{ .machineid }}
+linux      /{{ .machineid }}/{{ .version }}/linux
+initrd     /{{ .machineid }}/{{ .version }}/initrd

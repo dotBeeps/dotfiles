@@ -4,4 +4,9 @@
 echo "Installing arch pacman and aur packages."
 yay -Syu --needed --noconfirm {{ range .packages.arch.aur }}{{.}} {{end}}{{ range .packages.arch.pacman }}{{.}} {{end}}
 
+
+{{ if eq .chezmoi.hostname "dot-steamdeck" -}}
+yay -Syu --needed --noconfirm {{ range .packages.steamdeck.aur }}{{.}} {{end}}{{ range .packages.steamdeck.pacman }}{{.}} {{end}}
+{{ end -}}
+
 {{ end -}}

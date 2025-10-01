@@ -1,0 +1,9 @@
+{{- $osid := .chezmoi.os -}}
+{{- $rootuuid := output "blkid" "-t" "LABEL=\"endeavouros\"" "-l" "-o" "value" "-s" "UUID" -}}
+{{- if hasKey .chezmoi.osRelease "id" -}}
+{{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
+{{- end -}}
+
+data:
+    osid: {{ $osid | quote }}
+    rootuuid: {{ trim $rootuuid | quote }}

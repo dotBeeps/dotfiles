@@ -1,0 +1,11 @@
+kernels:
+  - package: linux
+    headers: linux-headers
+    title: Puppygirl Linux
+    sort: puppygirl-linux
+    version: {{ regexReplaceAll "^.*[[:blank:]]" (output "paru" "-Q" "linux-headers") "" }}
+  - package: linux-zen
+    headers: linux-zen-headers
+    title: Puppygirl Linux Zen
+    sort: puppygirl-linux-zen
+    version: {{ regexReplaceAll "^.*[[:blank:]]" (output "paru" "-Q" "linux-zen-headers") "" }}
