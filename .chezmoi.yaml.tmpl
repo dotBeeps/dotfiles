@@ -3,6 +3,14 @@
 {{-   $osid = printf "%s-%s" .chezmoi.os .chezmoi.osRelease.id -}}
 {{- end -}}
 
+edit:
+    command: codium
+    args:
+      - --ozone-platform=wayland
+      - --wait
+    apply: true
+    watch: true
+
 data:
     osid: {{ $osid | quote }}
     hostSettings: 
