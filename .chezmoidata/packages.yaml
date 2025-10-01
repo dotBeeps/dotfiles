@@ -43,6 +43,7 @@ packages:
       - breeze-gtk
       - breeze-icons
       - papirus-icon-theme
+      - rbw
     aur:
       - quickshell
       - vscodium-bin

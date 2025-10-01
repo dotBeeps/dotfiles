@@ -1,0 +1,2 @@
+rbw register
+rbw unlock
