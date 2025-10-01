@@ -44,6 +44,7 @@ packages:
       - ttf-monofur-nerd
       - ttf-nerd-fonts-symbols-mono
       - ttf-nerd-fonts-symbols
+      - ttf-jetbrains-mono-nerd
       - floorp-bin
       - qt5ct-kde
       - qt6ct-kde

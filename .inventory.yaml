@@ -1,0 +1,7 @@
+inventory:
+  dotbox:
+    primaryScreen: DP-2
+  dotdeck:
+    primaryScreen: eDP-1
+  dot-laptop:
+    primaryScreen: eDP-1

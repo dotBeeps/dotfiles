@@ -50,7 +50,7 @@
         "overrides": [
         ]
     },
-    "primaryScreen": {{ if eq .chezmoi.hostname "dotbox" }}"DP-2"{{ else }}"eDP-1"{{ end }},
+    "primaryScreen": {{ .hostSettings.primaryScreen }},
     "style": {
         "bar": {
             "fontSize": 16,
