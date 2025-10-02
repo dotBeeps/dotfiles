@@ -7,10 +7,7 @@ import qs.config
 Button {
     id: control
 
-    required property SystemTrayItem trayItem
-    property var iconOrDefaultSource: {
-        control.trayItem.icon.startsWith('image://icon/') ? Quickshell.iconPath(control.trayItem.icon.slice(13, control.trayItem.icon.indexOf('?') >= 0 ? control.trayItem.icon.indexOf('?') : undefined), 'view-grid') : control.trayItem.icon;
-    }
+    property alias source: img.source
 
     flat: true
     display: AbstractButton.TextOnly
@@ -19,8 +16,9 @@ Button {
     hoverEnabled: true
 
     Image {
+        id: img
+
         anchors.centerIn: parent
-        source: control.iconOrDefaultSource
         height: control.height - Config.style.spacing.md
         width: control.height - Config.style.spacing.md
     }

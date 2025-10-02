@@ -26,17 +26,13 @@ WrapperRectangle {
                 id: trayButton
                 Layout.fillHeight: true
                 required property var modelData
-                trayItem: modelData
+            
+                source: modelData.icon
                 onPressed: () => {
-        var pos = taskbar.barWindow.mapFromItem(trayButton, implicitWidth / 2, implicitHeight);
-        modelData.display(taskbar.barWindow, pos.x, pos.y);
-    }
+                    var pos = taskbar.barWindow.mapFromItem(trayButton, implicitWidth / 2, implicitHeight);
+                    modelData.display(taskbar.barWindow, pos.x, pos.y);
+                }
             }
-
-                
-
         }
-
     }
-
 }

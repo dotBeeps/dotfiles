@@ -1,5 +1,6 @@
 import Quickshell
 import Quickshell.Io
+import qs.util
 pragma Singleton
 
 Singleton {
