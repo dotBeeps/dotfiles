@@ -1,16 +1,15 @@
+{{ $displays := .hostSettings.displays }}
+
+
 ################
 ### MONITORS ###
 ################
-{{ if eq .chezmoi.hostname "dotbox" -}}
-monitor=DP-2,3840x2160@120,0x0,1
-monitor=DP-3,2560x1440@120,-1440x-440,1,transform,3
-monitor=DP-5,1920x1080@120,920x2160,1
-monitor=sunshine,720x1544@120,2840x2400,2
-{{ else if eq .chezmoi.hostname "dotdeck" }}
-monitor={{.hostSettings.primaryScreen}}, preferred, auto, 1, transform, 3
-{{ else }}
-monitor={{.hostSettings.primaryScreen}}, preferred, auto, auto
+{{ range .hostSettings.displays }}
+monitor={{ .name }},{{ if hasKey . "resolution" }}{{ .resolution }}{{ if hasKey . "refreshRate"}}@{{ .refreshRate }}{{else}}preferred{{end}}{{end}},{{ if hasKey . "position" }}{{ .position }}{{else}}auto{{end}},{{if hasKey . "scale"}}{{ .scale }}{{else}}auto{{end}}{{if hasKey . "transform"}},transform,{{.transform}}{{end}}
 {{ end }}
+
+
+
 
 input {
     kb_layout = us
@@ -20,21 +19,31 @@ input {
 
     focus_on_close = 1
 
-    tablet {
-        output = current
-    }
-
-    touchdevice {
-        output = sunshine
-        transform = 0
-    }
-
     touchpad {
-        natural_scroll = yes
-        disable_while_typing = true
-        scroll_factor = 0.3
+        natural_scroll = true
     }
 } 
+
+device {
+    name = wacom-co.-ltd.-pen-and-multitouch-sensor-unknown
+    enabled = false
+}
+
+device {
+    name = wacom-co.-ltd.-pen-and-multitouch-sensor-1
+    enabled = true
+    {{ if eq .chezmoi.hostname "dotbox" }}
+    output = DP-4
+    {{ end }}
+}
+
+device {
+    name = wacom-co.-ltd.-pen-and-multitouch-sensor
+    enabled = true
+    {{ if eq .chezmoi.hostname "dotbox" }}
+    output = DP-4
+    {{ end }}
+}
 
 binds {
     scroll_event_delay = 0
@@ -42,7 +51,7 @@ binds {
 
 gestures {
     #workspace_swipe = true
-    workspace_swipe_distance = 700
+    workspace_swipe_distance = 700                                                                                                                                                                              
     #workspace_swipe_fingers = 4
     workspace_swipe_cancel_ratio = 0.15
     workspace_swipe_min_speed_to_force = 5
@@ -107,13 +116,21 @@ misc {
 }
 
 plugin {
-    split-monitor-workspaces {
-        count = 5
+    hyprsplit {
+        num_workspaces = 5
     }
-}
+    touch_gestures {
+        resize_on_border_long_press = false
+        sensitivity = 3.0
+    }
+    hyprexpo {
+        columns = 3
+        gap_size = 5
+        bg_col = rgb(111111)
+        workspace_method = center current # [center/first] [workspace] e.g. first 1 or center m+1
 
-debug {
-    error_position = 1
+        gesture_distance = 300 # how far is the "max" for the gesture
+    }
 }
 
 $hypr = ~/.config/hypr/hyprland
@@ -126,3 +143,4 @@ source = $hypr/execs.conf
 source = $hypr/rules.conf
 source = $hypr/keybinds.conf
 source = $hypr/colors.conf
+source = $hypr/gestures.conf
