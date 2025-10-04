@@ -1,8 +1,0 @@
-ADAPTIVE_SYNC=1
-# Specify if you want to enable support for HDR content
-ENABLE_GAMESCOPE_HDR=0
-{{ if eq .chezmoi.hostname "dotdeck" }}
-OUTPUT_CONNECTOR='*,eDP-1'
-{{ end }}
-
-CLIENTCMD="steam -steamos -pipewire-dmabuf -gamepadui"

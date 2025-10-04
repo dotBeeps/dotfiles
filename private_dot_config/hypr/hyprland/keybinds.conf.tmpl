@@ -102,3 +102,7 @@ bindle = , XF86AudioLowerVolume, exec, wpctl set-mute @DEFAULT_AUDIO_SINK@ 0; wp
 
 # Lock
 bind = Super,L,exec,loginctl lock-session
+
+{{ if eq .chezmoi.hostname "dotdeck" }}
+    bindl = ,XF86PowerOff, exec, ~/.config/hypr/scripts/deck_power_button.fish
+{{ end }}
