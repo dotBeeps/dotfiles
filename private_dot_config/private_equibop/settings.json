@@ -1,0 +1,13 @@
+{
+  "discordBranch": "stable",
+  "tray": true,
+  "minimizeToTray": false,
+  "arRPC": true,
+  "trayColor": "",
+  "trayMainOverride": false,
+  "spellCheckLanguages": ["en-US", "en"],
+  "trayIdleOverride": true,
+  "traySpeakingOverride": true,
+  "splashAnimationPath": "~/.config/equibop/SplashAnimations/dotSniffa.gif",
+  "splashColor": "rgb(239, 239, 240)"
+}
