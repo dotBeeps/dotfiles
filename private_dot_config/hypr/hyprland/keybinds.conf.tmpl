@@ -10,44 +10,44 @@ bind = Super, r, exec, ags quit & ags run
 
 # Go to workspace #
 $wsaction = ~/.config/hypr/scripts/wsaction.fish
-bind = Super, 1, split-workspace, 1
-bind = Super, 2, split-workspace, 2
-bind = Super, 3, split-workspace, 3
-bind = Super, 4, split-workspace, 4
-bind = Super, 5, split-workspace, 5
+bind = Super, 1, split:workspace, 1
+bind = Super, 2, split:workspace, 2
+bind = Super, 3, split:workspace, 3
+bind = Super, 4, split:workspace, 4
+bind = Super, 5, split:workspace, 5
 # Go to workspace group #
-bind = Ctrl+Super, 1, split-workspace, 1
-bind = Ctrl+Super, 2, split-workspace, 2
-bind = Ctrl+Super, 3, split-workspace, 3
-bind = Ctrl+Super, 4, split-workspace, 4
-bind = Ctrl+Super, 5, split-workspace, 5
+bind = Ctrl+Super, 1, split:workspace, 1
+bind = Ctrl+Super, 2, split:workspace, 2
+bind = Ctrl+Super, 3, split:workspace, 3
+bind = Ctrl+Super, 4, split:workspace, 4
+bind = Ctrl+Super, 5, split:workspace, 5
 # Go to workspace -1/+1
-bind = Super, mouse_down, split-workspace, -1
-bind = Super, mouse_up, split-workspace, +1
-binde = Ctrl+Super, left, split-workspace, -1
-binde = Super, Page_Up, split-workspace, -1
-binde = Ctrl+Super, right, split-workspace, +1
-binde = Super, Page_Down, split-workspace, +1
+bind = Super, mouse_down, split:workspace, -1
+bind = Super, mouse_up, split:workspace, +1
+binde = Ctrl+Super, left, split:workspace, -1
+binde = Super, Page_Up, split:workspace, -1
+binde = Ctrl+Super, right, split:workspace, +1
+binde = Super, Page_Down, split:workspace, +1
 # Go to workspace group -1/+1
-bind = Ctrl+Super, mouse_down, split-workspace, -10
-bind = Ctrl+Super, mouse_up, split-workspace, +10
+bind = Ctrl+Super, mouse_down, split:workspace, -10
+bind = Ctrl+Super, mouse_up, split:workspace, +10
 
 # Move window to workspace #
-bind = Super+Alt, 1, split-movetoworkspace, 1
-bind = Super+Alt, 2, split-movetoworkspace, 2
-bind = Super+Alt, 3, split-movetoworkspace, 3
-bind = Super+Alt, 4, split-movetoworkspace, 4
-bind = Super+Alt, 5, split-movetoworkspace, 5
+bind = Super+Alt, 1, split:movetoworkspace, 1
+bind = Super+Alt, 2, split:movetoworkspace, 2
+bind = Super+Alt, 3, split:movetoworkspace, 3
+bind = Super+Alt, 4, split:movetoworkspace, 4
+bind = Super+Alt, 5, split:movetoworkspace, 5
 # Move window to workspace -1/+1
-binde = Super+Alt, Page_Up, split-cycleworkspaces, -1
-binde = Super+Alt, Page_Down, split-cycleworkspaces, +1
-bind = Super+Alt, mouse_down, split-cycleworkspaces, -1
-bind = Super+Alt, mouse_up, split-cycleworkspaces, +1
-binde = Ctrl+Super+Shift, right, split-cycleworkspaces, +1
-binde = Ctrl+Super+Shift, left, split-cycleworkspaces, -1
+binde = Super+Alt, Page_Up, split:movetoworkspace, r-1
+binde = Super+Alt, Page_Down, split:movetoworkspace, r+1
+bind = Super+Alt, mouse_down, split:movetoworkspace, r-1
+bind = Super+Alt, mouse_up, split:movetoworkspace, r+1
+binde = Ctrl+Super+Shift, right, split:movetoworkspace, r+1
+binde = Ctrl+Super+Shift, left, split:movetoworkspace, r-1
 # Move window to/from special workspace
-bind = Ctrl+Super+Shift, down, split-movetoworkspace, e+0
-bind = Super+Alt, S, split-movetoworkspace, special:special
+bind = Ctrl+Super+Shift, down, split:movetoworkspace, e+0
+bind = Super+Alt, S, split:movetoworkspace, special:special
 
 # Window groups
 binde = Alt, Tab, cyclenext, activewindow

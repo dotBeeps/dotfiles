@@ -1,9 +1,6 @@
 $font = Monospace
-{{if eq .chezmoi.hostname "dotdeck"}}
-$lockMonitor = 
-{{else}}
-$lockMonitor = {{ .hostSettings.primaryScreen }}
-{{end}}
+
+$lockMonitor = {{ .hostSettings.primaryDisplay }}
 
 animations {
     enabled = true

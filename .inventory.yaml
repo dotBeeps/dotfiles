@@ -1,7 +1,41 @@
 inventory:
   dotbox:
-    primaryScreen: DP-2
+    primaryDisplay: DP-2
+    displays:
+      - displayName: BigFuckingDisplay
+        name: DP-2
+        description: Acer Technologies CG437K P 0x102199F9
+        resolution: 3840x2160
+        refreshRate: '120'
+        position: '0x0'
+        scale: 1
+      - displayName: Dell S216DG
+        name: DP-3
+        description: 'Dell Inc. Dell S2716DG #ASNIq6m5JLvd'
+        resolution: 2560x1440
+        refreshRate: '120'
+        position: -1440x-440
+        scale: 1
+        transform: 3
+      - displayName: ThinkVision Touch
+        name: DP-4
+        description: Lenovo Group Limited M14t Gen2 V90F1P9D
+        resolution: 2240x1400
+        refreshRate: '60'
+        position: 1120x2160
+        scale: 1.25
   dotdeck:
-    primaryScreen: eDP-1
+    displays:
+      - displayName: SteamDeck LCD
+        name: eDP-1
+        resolution: 800x1280
+        refreshRate: '60'
+        scale: 1
+        transform: 3
   dot-laptop:
-    primaryScreen: eDP-1
+    displays:
+      - displayName: Internal
+        name: eDP-1
+        resolution: 3840x2160
+        refreshRate: '60'
+        scale: 1
