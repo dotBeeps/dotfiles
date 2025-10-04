@@ -25,14 +25,25 @@ inventory:
         position: 1120x2160
         scale: 1.25
   dotdeck:
+    primaryDisplay: eDP-1
     displays:
+      - displayName: SteamDeck
+        name: SteamDeck
+        resolution: 1280x800
+        refreshRate: '60'
+        position: '0x0'
+        scale: 1
+        virtual: true
       - displayName: SteamDeck LCD
         name: eDP-1
         resolution: 800x1280
         refreshRate: '60'
+        position: '0x0'
         scale: 1
+        mirror: SteamDeck
         transform: 3
   dot-laptop:
+    primaryDisplay: eDP-1
     displays:
       - displayName: Internal
         name: eDP-1
