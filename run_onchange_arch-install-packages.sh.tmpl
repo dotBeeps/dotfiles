@@ -9,4 +9,8 @@ yay -Syu --needed --noconfirm {{ range .packages.arch.aur }}{{.}} {{end}}{{ rang
 yay -Syu --needed --noconfirm {{ range .packages.steamdeck.aur }}{{.}} {{end}}{{ range .packages.steamdeck.pacman }}{{.}} {{end}}
 {{ end -}}
 
+{{ if eq .chezmoi.hostname "dotblackwall" -}}
+yay -Syu --needed --noconfirm {{ range .packages.steamdeck.aur }}{{.}} {{end}}{{ range .packages.steamdeck.pacman }}{{.}} {{end}}
+{{ end -}}
+
 {{ end -}}

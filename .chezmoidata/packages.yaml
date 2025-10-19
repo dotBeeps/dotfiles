@@ -6,18 +6,6 @@ packages:
       - fastfetch
       - cava
       - fuzzel
-      - hyprland
-      - hyprgraphics
-      - hypridle
-      - hyprland-qt-support
-      - hyprland-qtutils
-      - hyprlang
-      - hyprpicker
-      - hyprpolkitagent
-      - hyprshot
-      - hyprland-qtutils
-      - hyprwayland-scanner
-      - xdg-desktop-portal-hyprland
       - xdg-desktop-portal-gtk
       - qt5-wayland
       - qt6-wayland
@@ -45,6 +33,18 @@ packages:
       - papirus-icon-theme
       - rbw
     aur:
+      - xdg-desktop-portal-hyprland-git
+      - hyprland-meta-git
+      - hypridle-git
+      - hyprlock-git
+      - hyprshot-git
+      - hyprpolkitagent-git
+      - hyprpaper-git
+      - hyprpicker-git
+      - hyprsysteminfo-git
+      - hyprqt6engine-git
+      - hyprpwcenter-git
+      - waypaper-git
       - quickshell
       - vscodium-bin
       - equibop-bin
@@ -57,10 +57,10 @@ packages:
       - qt6ct-kde
       - pinta
       - vkbasalt
-      - protontricks
+      - protontricks-git
       - gamemode
       - xpadneo-dkms
-      - app2unit
+      - app2unit-git
       - paru
       - papirus-folders
   steamdeck:

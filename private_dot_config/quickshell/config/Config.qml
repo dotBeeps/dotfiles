@@ -14,6 +14,7 @@ Singleton {
     property alias loaded: fileView.loaded
     property var activeColors: colors.themes[colors.currentTheme]
     property alias style: settings.style
+    property alias gaps: settings.style.spacing
 
     FileView {
         id: fileView

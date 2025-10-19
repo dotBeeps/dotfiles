@@ -1,6 +1,8 @@
 import QtQuick
 import QtQuick.Controls
+import Quickshell
 import qs.config
+import qs.modules.common
 
 Item {
     id: root
@@ -40,9 +42,10 @@ Item {
     }
 
     BarMediaPopout {
-        anchors.fill: button
-        popoutShown: root.popoutShown
-        offsetX: root.x + 8
+        shown: root.popoutShown
+        anchorItem: root
+        margins.bottom: -Config.gaps.sm
+        implicitWidth: button.width
     }
 
 }

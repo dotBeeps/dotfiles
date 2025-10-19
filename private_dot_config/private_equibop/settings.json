@@ -1,13 +1,16 @@
 {
-  "discordBranch": "stable",
-  "tray": true,
-  "minimizeToTray": false,
-  "arRPC": true,
-  "trayColor": "",
-  "trayMainOverride": false,
-  "spellCheckLanguages": ["en-US", "en"],
-  "trayIdleOverride": true,
-  "traySpeakingOverride": true,
-  "splashAnimationPath": "~/.config/equibop/SplashAnimations/dotSniffa.gif",
-  "splashColor": "rgb(239, 239, 240)"
+    "discordBranch": "stable",
+    "tray": true,
+    "minimizeToTray": true,
+    "arRPC": true,
+    "trayColor": "",
+    "trayMainOverride": false,
+    "spellCheckLanguages": [
+        "en-US",
+        "en"
+    ],
+    "trayIdleOverride": true,
+    "traySpeakingOverride": true,
+    "splashAnimationPath": "/home/dot/.config/equibop/SplashAnimations/dotSniffa.gif",
+    "splashColor": "rgb(239, 239, 240)"
 }
