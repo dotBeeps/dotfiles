@@ -1,0 +1,15 @@
+{
+  "name": "No Gameview Tabs",
+  "author": "dereks",
+  "version": "v1.1",
+  "manifest_version": 9,
+  "inject": {
+    "gameview.css": [
+      "bigpicture"
+    ]
+  },
+  "flags": [
+    "REQUIRE_NAV_PATCH"
+  ],
+  "id": "3a39c2c4-cc3c-4b70-87e3-6d4b03784e08"
+}

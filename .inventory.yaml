@@ -1,6 +1,6 @@
 inventory:
   dotbox:
-    primaryDisplay: DP-2
+    primaryDisplay: DP-1
     displays:
       - displayName: BigFuckingDisplay
         name: DP-1

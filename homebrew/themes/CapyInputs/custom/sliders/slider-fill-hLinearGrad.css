@@ -1,0 +1,7 @@
+:root {
+    --capyInputs-slider-fill:
+        linear-gradient(to right,
+        var(--capyInputs-Custom-slider-fill-c1),
+        var(--capyInputs-Custom-slider-fill-c2),
+        var(--capyInputs-Custom-slider-fill-c3));
+}

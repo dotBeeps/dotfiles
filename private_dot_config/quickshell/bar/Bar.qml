@@ -144,7 +144,7 @@ PanelWindow {
                 height: parent.height
 
                 TaskBar {
-                    visible: Config.primaryScreen == bar.screenData.name ?? ''
+                    visible: Config.primaryScreen === bar.screenData.name ?? ''
                     barWindow: bar
                 }
 

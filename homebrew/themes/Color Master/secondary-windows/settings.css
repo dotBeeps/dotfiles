@@ -1,0 +1,23 @@
+/* ? other */
+.voicesettings_MicrophoneTest_2Dptk .voicesettings_VolumeBar_Qeg4q {
+  background-color: var(--color-master-background-dark);
+}
+
+/* ? storage tab */
+.contentmanagement_IsSelected_3VQeL {
+  background-color: var(--color-master-midtone3);
+}
+.contentmanagement_InstallFolder_12aBP:hover {
+  background-color: var(--color-master-midtone4);
+}
+.contentmanagement_DriveUsageIndicator_1EubJ {
+  background-color: var(--color-master-background-dark);
+}
+
+/** add new folder modal */
+.ModalPosition_Dismiss .closeButton .SVGIcon_X_Line line {
+  stroke: var(--color-master-font-foreground);
+}
+.ModalPosition_Dismiss .closeButton:hover .SVGIcon_X_Line line {
+  stroke: var(--color-master-font-foreground-bright);
+}

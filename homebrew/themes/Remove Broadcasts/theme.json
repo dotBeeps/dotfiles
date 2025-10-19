@@ -1,0 +1,12 @@
+{
+  "name": "Remove Broadcasts",
+  "author": "Pleasance",
+  "version": "v1.0",
+  "manifest_version": 8,
+  "inject": {
+    "store.css": [
+      "~https://store.steampowered.com~"
+    ]
+  },
+  "id": "e4e72a46-51ac-40e0-81da-75303dddb9ec"
+}

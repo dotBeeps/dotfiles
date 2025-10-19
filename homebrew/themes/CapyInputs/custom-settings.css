@@ -1,0 +1,23 @@
+/*
+CapyInputs
+Core variables
+*/
+
+:root {
+    
+    --capyInputs-toggle-ON-handle: var(--capyInputs-Custom-toggle-ON-handle);
+    --capyInputs-toggle-ON-rail: var(--capyInputs-Custom-toggle-ON-rail);
+    --capyInputs-toggle-OFF-handle: var(--capyInputs-Custom-toggle-OFF-handle);
+    --capyInputs-toggle-OFF-rail: var(--capyInputs-Custom-toggle-OFF-rail);
+
+    --capyInputs-slider-fill: var(--capyInputs-Custom-slider-fill);
+    --capyInputs-slider-handle: var(--capyInputs-Custom-slider-handle);
+    --capyInputs-slider-empty: var(--capyInputs-Custom-slider-empty);
+    --capyInputs-slider-hl: var(--capyInputs-Custom-slider-hl);
+
+    /* Note: checkboxes follow button scheme */
+    --capyInputs-button-bg: var(--capyInputs-Custom-button-bg);
+    --capyInputs-button-bg-hl: var(--capyInputs-Custom-button-bg-hl);
+    --capyInputs-button-fg: var(--capyInputs-Custom-button-fg);
+    --capyInputs-button-fg-hl: var(--capyInputs-Custom-button-fg-hl);
+}

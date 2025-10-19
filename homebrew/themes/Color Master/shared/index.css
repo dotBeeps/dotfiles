@@ -1,0 +1,72 @@
+:root {
+  --color-master-background-dark:    #121212;
+  --color-master-background:         #1C1B19;
+  --color-master-background-bright:  #918175;
+  --color-master-foreground:         #BAA67F;
+  --color-master-foreground-bright:  #FCE8C3;
+  --color-master-midtone1:           #262626;
+  --color-master-midtone2:           #444444;
+  --color-master-midtone3:           #4E4E4E;
+  --color-master-midtone4:           #767676;
+  --color-master-midtone5:           #949494;
+  --color-master-highlight:          #2C78BF;
+  --color-master-highlight_hover:    #2c89bf;
+  --color-master-highlight2:         #98BC37;
+  --color-master-warning:            #F75341;
+
+  --color-master-font-foreground:         #BAA67F;
+  --color-master-font-foreground-bright:  #FCE8C3;
+  --color-master-font-background:         #1C1B19;
+  --color-master-font-background-bright:  #918175;
+  --color-master-font-midtone1:           #262626;
+  --color-master-font-midtone4:           #767676;
+  --color-master-font-midtone5:           #949494;
+
+  /** These variables are used in some of the gradients */
+  --color-master-background_rgb:          28, 27, 25;
+  --color-master-background2_rgb:         207, 201, 193;
+  --color-master-background3_rgb:         66, 57, 43;
+  --color-master-background4_rgb:         47, 42, 36;
+  --color-master-background5_rgb:         80, 71, 62;
+  --color-master-background6_rgb:         127, 117, 107;
+
+  /* --color-master-background:          #1c1b19; */
+  /* --color-master-background2:         #cfc9c1; */
+  /* --color-master-background3:         #42392b; */
+  /* --color-master-background4:         #2f2a24; */
+  /* --color-master-background5:         #50473e; */
+  /* --color-master-background6:         #7f756b; */
+
+  --color-master-background-orange:       #776255;
+  --color-master-background-orange2:      #5d514c;
+  --color-master-background-orange3:      #39322d;
+  --color-master-background-orange4:      #2e2925;
+
+  --color-master-background-orange_rgb:   121, 99, 85;
+  --color-master-background-orange2_rgb:  92, 80, 75;
+  --color-master-background-orange3_rgb:  58, 51, 46;
+
+  --color-master-foreground_rgb:          186, 166, 127;
+  --color-master-foreground-bright_rgb:   252, 232, 195;
+  --color-master-foreground-bright2_rgb:  221, 199, 157;
+
+  /* --color-master-foreground-bright-hue: 30; */
+  /* --color-master-foreground-bright2:  hsl(var(--color-master-foreground-bright-hue), 48%, 74%); */
+
+  --color-master-gp-grad-stop1_rgb: 105, 92, 83;
+  --color-master-gp-grad-stop2_rgb: 184, 154, 125;
+  --color-master-gp-grad-stop3_rgb: 204, 178, 153;
+
+  /* --color-master-gp-grad-hue: 30; */
+  /* --color-master-gp-grad-stop1: #695e54; */
+  /* --color-master-gp-grad-stop2: #b89c7f; */
+  /* --color-master-gp-grad-stop3: #ccb399; */
+
+  /* Overriding color of colored toggles */
+  --colored-toggles-desktop-main-color: var(--color-master-highlight) !important;
+  --colored-toggles-desktop-main-color_hover: var(--color-master-highlight_hover) !important;
+  --colored-toggles-desktop-friends-text-color: var(--color-master-font-foreground-bright) !important;
+
+  --skinny-header-icon-color: var(--color-master-font-foreground) !important;
+  --skinny-header-icon-hover-color: var(--color-master-font-foreground-bright) !important;
+}

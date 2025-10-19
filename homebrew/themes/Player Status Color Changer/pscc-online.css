@@ -1,0 +1,33 @@
+/*
+---
+Player Status Color Changer
+v1.0
+---
+*/
+
+/* ---
+Online Status
+--- */
+
+.online .personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .online .personanameandstatus_richPresenceLabel_1k82N,
+.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a.GamepadMode,
+.GamepadMode .online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a,
+.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover.GamepadMode,
+.GamepadMode .online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover,
+.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active.GamepadMode,
+.GamepadMode .online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active,
+.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited.GamepadMode,
+.GamepadMode .online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited {
+    color: var(--pscc-online-shade);
+}
+
+/* ---
+Avatar Line Indicator
+--- */
+
+.online:not(.awayOrSnooze) .steamavatar_avatarStatus_1yIzy.GamepadMode,
+.GamepadMode .online:not(.awayOrSnooze) .steamavatar_avatarStatus_1yIzy,
+.standardtemplates_AvatarStatus_2yhOC.online:not(.awayOrSnooze) {
+    background: var(--pscc-online-shade);
+}

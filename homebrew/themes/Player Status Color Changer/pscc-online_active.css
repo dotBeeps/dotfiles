@@ -1,0 +1,15 @@
+/*
+---
+Player Status Color Changer
+v1.0
+---
+*/
+
+/* ---
+Online Active Status
+--- */
+
+.online .personanameandstatus_playerName_r62qz.GamepadMode,
+.GamepadMode .online .personanameandstatus_playerName_r62qz {
+    color: var(--pscc-online);
+}

@@ -1,0 +1,98 @@
+/*
+---
+Player Status Color Changer
+v1.0
+---
+*/
+
+/* ---
+In-Game Status
+--- */
+
+/* Player Name + Rich Presence */
+
+.ingame .personanameandstatus_playerName_r62qz {
+    color: var(--pscc-ingame) !important;
+}
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N,
+.gamepadhomefriends_InGameGame_KLo2n .gamepadhomefriends_FriendsPlaying_15rrZ {
+    color: var(--pscc-ingame) !important;
+}
+
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N,
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a,
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover,
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active,
+.ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited,
+.ingame.personanameandstatus_twoLine_27M2G .personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .ingame.personanameandstatus_twoLine_27M2G .personanameandstatus_richPresenceLabel_1k82N,
+
+.ingame.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .ingame.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N,
+.ingame .personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_richPresenceLabel_1k82N,
+.ingame .personanameandstatus_richPresenceLabel_1k82N a.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_richPresenceLabel_1k82N a,
+.ingame .personanameandstatus_richPresenceLabel_1k82N a:hover.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_richPresenceLabel_1k82N a:hover,
+.ingame .personanameandstatus_richPresenceLabel_1k82N a:active.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_richPresenceLabel_1k82N a:active,
+.ingame .personanameandstatus_richPresenceLabel_1k82N a:visited.GamepadMode,
+.GamepadMode .ingame .personanameandstatus_richPresenceLabel_1k82N a:visited,
+
+.friend.gpfocus .labelHolder.GamepadMode.ingame.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.friend.gpfocus .labelHolder.GamepadMode.ingame .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .friend.gpfocus .labelHolder.ingame.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.GamepadMode .friend.gpfocus .labelHolder.ingame .personanameandstatus_richPresenceLabel_1k82N,
+.favoriteElement.gpfocus .labelHolder.GamepadMode.ingame.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.favoriteElement.gpfocus .labelHolder.GamepadMode.ingame .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .favoriteElement.gpfocus .labelHolder.ingame.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.GamepadMode .favoriteElement.gpfocus .labelHolder.ingame .personanameandstatus_richPresenceLabel_1k82N {
+    color: var(--pscc-ingame);
+}
+
+.friendsnooze_SnoozeContainer_3EzTy.ingame .friendsnooze_SnoozeZ_1DArl.GamepadMode,
+.GamepadMode .friendsnooze_SnoozeContainer_3EzTy.ingame .friendsnooze_SnoozeZ_1DArl,
+.friendsnooze_SnoozeContainer_3EzTy.in-game .friendsnooze_SnoozeZ_1DArl.GamepadMode,
+.GamepadMode .friendsnooze_SnoozeContainer_3EzTy.in-game .friendsnooze_SnoozeZ_1DArl {
+    color: var(--pscc-ingame);
+}
+
+/* Status Icon In-Game (visible on the home screen) */
+
+.personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_VR path.GamepadMode,
+.GamepadMode .personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_VR path,
+.personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_MobilePhone path.GamepadMode,
+.GamepadMode .personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_MobilePhone path,
+.personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_BigPicture path.GamepadMode,
+.GamepadMode .personastatusicons_PersonaStatusIcon_1YsWj.ingame .SVGIcon_BigPicture path {
+    fill: var(--pscc-ingame);
+}
+
+/* ---
+Avatar Line Indicator
+--- */
+
+.ingame .steamavatar_avatarStatus_1yIzy.GamepadMode,
+.GamepadMode .ingame .steamavatar_avatarStatus_1yIzy,
+.standardtemplates_AvatarStatus_2yhOC.ingame,
+.standardtemplates_AvatarStatus_2yhOC.awayOrSnooze.ingame {
+    background: var(--pscc-ingame);
+}
+
+/* ---
+Notification Toasts
+--- */
+
+.shorttemplates_AvatarStatus_1wkTz.ingame {
+    background: var(--pscc-ingame);
+}
+.notificationcontent_FriendInGameAppColor_3uw_G {
+    color: var(--pscc-ingame);
+}

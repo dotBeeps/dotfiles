@@ -1,0 +1,45 @@
+{
+  "name": "Show Download Status",
+  "display_name": "Show Install Status",
+  "version": "v1.4.2",
+  "author": "Tormak & RasitAyaz",
+  "manifest_version": 9,
+  "inject": {},
+  "patches": {
+    "Varients": {
+      "type": "dropdown",
+      "default": "Original",
+      "values": {
+        "Original": {
+          "varients/original.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "Small": {
+          "varients/small.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "Circular": {
+          "varients/circle.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        },
+        "Circlular (no uninstall)": {
+          "varients/circleNoUninstall.css": [
+            "SP",
+            "MainMenu",
+            "QuickAccess"
+          ]
+        }
+      }
+    }
+  },
+  "id": "2bf7d0cf-5bc0-40d0-8b26-2dd286505994"
+}

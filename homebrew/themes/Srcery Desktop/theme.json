@@ -1,0 +1,29 @@
+{
+  "name": "Srcery Desktop",
+  "author": "Tormak",
+  "version": "v1.0.0",
+  "manifest_version": 7,
+  "inject": {
+    "shared.css": [
+      ".*"
+    ]
+  },
+  "dependencies": {
+    "Color Master": {}
+  },
+  "patches": {
+    "Font": {
+      "type": "checkbox",
+      "default": "No",
+      "values": {
+        "Yes": {
+          "font.css": [
+            "SteamLibraryWindow|Steam"
+          ]
+        },
+        "No": {}
+      }
+    }
+  },
+  "id": "604e1237-0869-4f4e-ae13-abac7ae9f308"
+}

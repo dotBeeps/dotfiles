@@ -1,0 +1,117 @@
+{
+  "name": "Player Status Color Changer",
+  "author": "Capybara",
+  "version": "1.0",
+  "manifest_version": 9,
+  "tabs": {
+    "default": [
+      "bigpicture",
+      "bigpictureoverlay",
+      "notificationtoasts.*"
+    ]
+  },
+  "inject": {},
+  "patches": {
+    "Online": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "⚙️ Custom...": {
+          "pscc-online.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#FF0000",
+          "css_variable": "pscc-online-shade",
+          "tabs": []
+        }
+      ]
+    },
+    "Online (Player Name)": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "⚙️ Custom...": {
+          "pscc-online_active.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#FF0000",
+          "css_variable": "pscc-online",
+          "tabs": []
+        }
+      ]
+    },
+    "Away": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "⚙️ Custom...": {
+          "pscc-away.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#FF0000",
+          "css_variable": "pscc-away",
+          "tabs": []
+        }
+      ]
+    },
+    "In-Game": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "⚙️ Custom...": {
+          "pscc-ingame.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#FF0000",
+          "css_variable": "pscc-ingame",
+          "tabs": []
+        }
+      ]
+    },
+    "Offline": {
+      "type": "dropdown",
+      "default": "Default",
+      "values": {
+        "Default": {},
+        "⚙️ Custom...": {
+          "pscc-offline.css": []
+        }
+      },
+      "components": [
+        {
+          "name": "Color Picker",
+          "type": "color-picker",
+          "on": "⚙️ Custom...",
+          "default": "#FF0000",
+          "css_variable": "pscc-offline",
+          "tabs": []
+        }
+      ]
+    }
+  },
+  "id": "31afef17-d7e9-4b95-8f85-6a612700b882"
+}

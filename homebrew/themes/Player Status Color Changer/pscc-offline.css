@@ -1,0 +1,47 @@
+/*
+---
+Player Status Color Changer
+v1.0
+---
+*/
+
+/* ---
+Offline Status
+--- */
+
+/* Offline Player Name */
+
+.offline .personanameandstatus_playerName_r62qz.GamepadMode,
+.GamepadMode .offline .personanameandstatus_playerName_r62qz {
+    color: var(--pscc-offline);
+}
+
+/* Offline Rich Presence */
+
+.friend.gpfocus .labelHolder.GamepadMode.offline .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .friend.gpfocus .labelHolder.offline .personanameandstatus_richPresenceLabel_1k82N,
+.favoriteElement.gpfocus .labelHolder.GamepadMode.offline .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .favoriteElement.gpfocus .labelHolder.offline .personanameandstatus_richPresenceLabel_1k82N,
+
+.friend .labelHolder.GamepadMode.offline .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .friend .labelHolder.offline .personanameandstatus_richPresenceLabel_1k82N,
+.favoriteElement .labelHolder.GamepadMode.offline .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .favoriteElement .labelHolder.offline .personanameandstatus_richPresenceLabel_1k82N,
+
+.offline .personanameandstatus_richPresenceLabel_1k82N,
+.offline .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a,
+.offline .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover,
+.offline .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active,
+.offline .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited {
+    color: var(--pscc-offline);
+    opacity: .85;
+}
+
+/* ---
+Avatar Line Indicator
+--- */
+
+.offline .steamavatar_avatarStatus_1yIzy.GamepadMode,
+.GamepadMode .offline .steamavatar_avatarStatus_1yIzy {
+    background: var(--pscc-offline);
+}

@@ -1,0 +1,26 @@
+{
+  "name": "NieR Perfect YoRHa OS Sound FX",
+  "author": "Who!#6464",
+  "version": "v1.1",
+  "manifest_version": 1,
+  "music": false,
+  "ignore": [
+    "bumper_end.wav",
+    "confirmation_negative.wav",
+    "confirmation_positive.wav",
+    "deck_ui_message_toast.wav",
+    "deck_ui_misc_01.wav",
+    "deck_ui_misc_08.wav",
+    "deck_ui_switch_toggle_off.wav",
+    "deck_ui_switch_toggle_on.wav",
+    "deck_ui_tile_scroll.wav",
+    "deck_ui_toast.wav",
+    "pop_sound.wav",
+    "steam_at_mention.m4a",
+    "steam_chatroom_notification.m4a",
+    "ui_steam_message_old_smooth.m4a",
+    "ui_steam_smoother_friend_join.m4a",
+    "ui_steam_smoother_friend_online.m4a"
+  ],
+  "id": "622f7fe1-9984-4383-9964-03e3177c5b7c"
+}

@@ -57,17 +57,9 @@ Scope {
                     }
                 }
             }
-            
-            
-            Loader {
-                active: screenItem.modelData.name === 'sunshine'
-                sourceComponent: ControlCenter {
-                    screen: screenItem.modelData
-                }
-            }
 
             Loader {
-                active: screenItem.modelData.name !== 'DP-5' && screenItem.modelData.name !== 'sunshine'
+                active: true
 
                 sourceComponent: NotificationTray {
                         screenData: screenItem.modelData

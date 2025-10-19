@@ -1,0 +1,43 @@
+/*
+---
+Player Status Color Changer
+v1.0
+---
+*/
+
+/* ---
+Away Status
+--- */
+
+.awayOrSnooze.online .personanameandstatus_playerName_r62qz.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_playerName_r62qz,
+.awayOrSnooze.online .personanameandstatus_richPresenceLabel_1k82N.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_richPresenceLabel_1k82N,
+.awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a,
+.awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:hover,
+.awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:active,
+.awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited.GamepadMode,
+.GamepadMode .awayOrSnooze.online .personanameandstatus_gameName_2wpap.personanameandstatus_richPresenceLabel_1k82N a:visited,
+
+.friend.gpfocus .labelHolder.GamepadMode.online.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.friend.gpfocus .labelHolder.GamepadMode.online.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .friend.gpfocus .labelHolder.online.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.GamepadMode .friend.gpfocus .labelHolder.online.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N,
+.favoriteElement.gpfocus .labelHolder.GamepadMode.online.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.favoriteElement.gpfocus .labelHolder.GamepadMode.online.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N,
+.GamepadMode .favoriteElement.gpfocus .labelHolder.online.awayOrSnooze .personanameandstatus_playerName_r62qz,
+.GamepadMode .favoriteElement.gpfocus .labelHolder.online.awayOrSnooze .personanameandstatus_richPresenceLabel_1k82N,
+
+.friendsnooze_SnoozeContainer_3EzTy.online .friendsnooze_SnoozeZ_1DArl.GamepadMode,
+.GamepadMode .friendsnooze_SnoozeContainer_3EzTy.online .friendsnooze_SnoozeZ_1DArl {
+    color: var(--pscc-away);
+}
+
+.awayOrSnooze .steamavatar_avatarStatus_1yIzy.GamepadMode,
+.GamepadMode .awayOrSnooze .steamavatar_avatarStatus_1yIzy,
+.standardtemplates_AvatarStatus_2yhOC.awayOrSnooze {
+    background: var(--pscc-away);
+}

@@ -1,0 +1,86 @@
+/* ---
+CapyInputs
+Buttons, dropdowns
+--- */
+
+    /* button */
+    button.cXzBZxhPBl7fZs9LODEnc.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.Primary {
+        background: var(--capyInputs-button-bg);
+    }
+    button.cXzBZxhPBl7fZs9LODEnc.DialogButton, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover {
+        color: var(--capyInputs-button-fg);
+    }
+    button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active:active, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover:active {
+        background: var(--capyInputs-button-bg-hl);
+        color: var(--capyInputs-button-fg-hl);
+    }
+    /* friends page -> header buttons */
+    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton {
+        background: var(--capyInputs-button-bg);
+        color: var(--capyInputs-button-fg);
+        padding: 4px 8px 4px 8px;
+    }
+    .GamepadMode.friendlist .TabPanelHeader .NewChatGroupButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .AddFriendButton.gpfocus, .GamepadMode.friendlist .TabPanelHeader .FriendsInvitesButton.gpfocus {
+        background: var(--capyInputs-button-bg-hl);
+        color: var(--capyInputs-button-fg-hl);
+    }
+    ._2fl-TfpJcuSi88OkNwGOCb,
+    ._3g-QHB82IGz91Hsk1Hw4lh,
+    .cbinvNOoQE045ZV5gCk_N {
+        color: var(--capyInputs-button-fg);
+    }
+    /* extended dropdowns e.g. Settings -> General -> Timezone */
+    .gpfocus ._2fl-TfpJcuSi88OkNwGOCb,
+    .gpfocus ._3g-QHB82IGz91Hsk1Hw4lh,
+    .gpfocus .cbinvNOoQE045ZV5gCk_N {
+        color: var(--capyInputs-button-fg-hl);
+    }
+    /* "special" buttons */
+    button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active:active.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus.Primary, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover:active.Primary {
+        background: var(--capyInputs-button-fg-hl);
+        color: var(--capyInputs-button-bg-hl);
+    }
+    /* disabled */
+    button.cXzBZxhPBl7fZs9LODEnc.DialogButton.Disabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton[disabled], button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.Disabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled[disabled], button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.Disabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active[disabled], button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.Disabled, button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover[disabled] {
+        background: var(--capyInputs-button-bg);
+        color: var(--capyInputs-button-fg);
+    }
+    /* remove box-shadow highlight */
+    .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:active.gpfocus, .eKmEXJCm_lgme24Fp_HWt button.cXzBZxhPBl7fZs9LODEnc.DialogButton:enabled:active:hover.gpfocus {
+        box-shadow: none;
+    }
+
+    /* soundtracks page -> controls */
+    ._1iFnR7cGRa1kepep433pGx.h782PaUbu8xm3afLFh83E.DialogButton.cXzBZxhPBl7fZs9LODEnc svg path {
+        fill: var(--capyInputs-button-fg);
+    }
+    ._1iFnR7cGRa1kepep433pGx.DialogButton.cXzBZxhPBl7fZs9LODEnc svg path {
+        fill: var(--capyInputs-button-fg);
+        stroke: none;
+    }
+    button._1iFnR7cGRa1kepep433pGx.gpfocus,
+    button._1iFnR7cGRa1kepep433pGx:active {
+        background: var(--capyInputs-button-bg-hl) !important;
+    }
+    button._1iFnR7cGRa1kepep433pGx.gpfocus svg path,
+    button._1iFnR7cGRa1kepep433pGx:active svg path {
+        fill: var(--capyInputs-button-fg-hl) !important;
+    }
+
+/* ---
+Checkboxes
+--- */
+
+.DialogCheckbox {
+    background: var(--capyInputs-button-bg);
+    box-shadow: none;
+}
+.DialogCheckbox_Container:hover .DialogCheckbox:not(.Disabled), .DialogCheckbox:hover:not(.Disabled), .DialogCheckbox_Container:focus .DialogCheckbox:not(.Disabled), .DialogCheckbox:focus:not(.Disabled) {
+    background: var(--capyInputs-button-bg-hl);
+}
+.DialogCheckbox path {
+    stroke: var(--capyInputs-button-fg);
+}
+.DialogCheckbox_Container:focus .DialogCheckbox path {
+    stroke: var(--capyInputs-button-fg-hl);
+}

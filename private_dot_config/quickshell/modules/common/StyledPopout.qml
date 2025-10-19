@@ -1,6 +1,7 @@
 import QtQml
 import QtQuick
 import Quickshell
+import Quickshell.Hyprland
 import Quickshell.Widgets
 import qs.config
 
@@ -11,9 +12,17 @@ Item {
     property Item anchorItem
     property PopupAnchor.Edges anchorEdge
     property PopupMargins margins
+    property PopupMargins implicitMargins
     property bool shown: false
     property QsWindow window
     property color color: Config.activeColors.base
+
+    onMarginsChanged: {
+        implicitMargins.top = margins.top;
+        implicitMargins.bottom = margins.bottom;
+        implicitMargins.right = margins.right;
+        implicitMargins.left = margins.left;
+    }
 
     LazyLoader {
         id: popupLoader
@@ -29,10 +38,10 @@ Item {
             implicitWidth: root.implicitWidth || background.implicitWidth
             implicitHeight: root.implicitHeight || background.implicitHeight
             anchor.edges: root.anchorEdge || Edges.Bottom | Edges.Left
-            anchor.margins.left: root.margins.left
-            anchor.margins.right: root.margins.right
-            anchor.margins.top: root.margins.top
-            anchor.margins.bottom: root.margins.bottom
+            anchor.margins.left: root.implicitMargins.left
+            anchor.margins.right: root.implicitMargins.right
+            anchor.margins.top: root.implicitMargins.top
+            anchor.margins.bottom: root.implicitMargins.bottom
             color: "transparent"
             onShownChanged: {
                 if (shown)
@@ -60,22 +69,22 @@ Item {
 
                 running: popup.shown
 
-                ColorAnimation {
-                    target: background
-                    property: "color"
-                    to: root.color
-                    duration: 60
-                    from: "transparent"
-                    easing.type: Easing.InOutQuad
+                NumberAnimation {
+                    target: popup.HyprlandWindow
+                    property: "opacity"
+                    from: 0
+                    duration: 40
+                    to: 1
+                    easing.type: Easing.OutQuad
                 }
 
-                PropertyAnimation {
-                    target: root.margins
-                    property: "left"
-                    from: -Config.gaps.xxs
-                    to: 0
-                    duration: 60
-                    easing.type: Easing.InOutQuad
+                NumberAnimation {
+                    target: root.implicitMargins
+                    property: "bottom"
+                    from: -root.margins.bottom
+                    to: root.margins.bottom
+                    duration: 40
+                    easing.type: Easing.OutQuad
                 }
 
             }
@@ -90,22 +99,21 @@ Item {
 
                 }
 
-                ColorAnimation {
-                    target: background
-                    property: "color"
-                    from: root.color
-                    duration: 100
-                    to: "transparent"
+                NumberAnimation {
+                    target: popup.HyprlandWindow
+                    property: "opacity"
+                    from: 1
+                    duration: 40
+                    to: 0
                     easing.type: Easing.InOutQuad
                 }
 
-                PropertyAnimation {
-                    target: root.margins
-                    property: "left"
-                    to: Config.gaps.xxs
-                    from: 0
-                    duration: 100
-                    easing.type: Easing.InOutQuad
+                NumberAnimation {
+                    target: root.implicitMargins
+                    property: "bottom"
+                    to: -root.margins.bottom
+                    duration: 40
+                    easing.type: Easing.InQuad
                 }
 
             }
@@ -115,6 +123,9 @@ Item {
     }
 
     margins: PopupMargins {
+    }
+
+    implicitMargins: PopupMargins {
     }
 
     component PopupMargins: QtObject {

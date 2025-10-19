@@ -44,7 +44,7 @@ Item {
     BarMediaPopout {
         shown: root.popoutShown
         anchorItem: root
-        margins.bottom: -Config.gaps.sm
+        margins.bottom: -Config.gaps.xs
         implicitWidth: button.width
     }
 

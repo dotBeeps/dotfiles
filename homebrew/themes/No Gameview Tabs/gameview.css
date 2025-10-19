@@ -1,0 +1,21 @@
+.BasicUI .basicappdetailssectionstyler_AppDetailsContainer_2-ns_ {
+  display: none;
+  visibility: hidden;
+}
+
+.BasicUI .basicappdetailssectionstyler_AppDetailsContainer_2-ns_ .Focusable {
+  display: none;
+}
+
+.appdetailsplaysection_CloudStatusRow_QvHky {
+  display: none;
+}
+
+.basicappdetailssectionstyler_DeckVerifiedFeedbackContainer_3Y8xV.Panel {
+  display: none;
+}
+
+.basicappdetailssectionstyler_DeckVerifiedFeedbackContainer_3Y8xV.Panel
+  .Focusable {
+  display: none;
+}
