@@ -7,7 +7,7 @@ import qs.modules.media
 import qs.modules.media.mediaInfo
 import qs.services
 
-StyledPopout {
+StyledPopup {
     id: root
 
     ColumnLayout {

@@ -12,5 +12,9 @@
     "trayIdleOverride": true,
     "traySpeakingOverride": true,
     "splashAnimationPath": "/home/dot/.config/equibop/SplashAnimations/dotSniffa.gif",
-    "splashColor": "rgb(239, 239, 240)"
+    "splashColor": "oklch(0.75 0 0)",
+    "hardwareVideoAcceleration": false,
+    "arguments": "",
+    "disableMinSize": true,
+    "splashBackground": "rgba(21, 23, 25, 0.784)"
 }

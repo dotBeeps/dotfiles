@@ -1,9 +1,9 @@
-
 abbr -a -- ls eza
 abbr -a -- la 'eza -lah'
 abbr -a -- ldot 'eza -ld .*'
-
-
+abbr -a -- hx helix
+abbr -a -- hx.c 'helix /home/dot/.config'
+abbr -a -- c.c 'cd /home/dot/.config/'
 
 if status is-interactive
     # Starship custom prompt

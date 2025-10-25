@@ -30,30 +30,26 @@ device {
     enabled = false
 }
 
+{{ if eq .chezmoi.hostname "dotbox" }}
 device {
     name = wacom-co.-ltd.-pen-and-multitouch-sensor-1
     enabled = true
-    {{ if eq .chezmoi.hostname "dotbox" }}
-    output = DP-4
-    {{ end }}
+    output = DP-3
 }
 
 device {
     name = wacom-co.-ltd.-pen-and-multitouch-sensor
     enabled = true
-    {{ if eq .chezmoi.hostname "dotbox" }}
-    output = DP-4
-    {{ end }}
+    output = DP-3
 }
+{{ end }}
 
 binds {
     scroll_event_delay = 0
 }
 
 gestures {
-    #workspace_swipe = true
-    workspace_swipe_distance = 700                                                                                                                                                                              
-    #workspace_swipe_fingers = 4
+    workspace_swipe_distance = 100                                                                                                                                                                              
     workspace_swipe_cancel_ratio = 0.15
     workspace_swipe_min_speed_to_force = 5
     workspace_swipe_direction_lock = true
@@ -122,7 +118,7 @@ plugin {
     }
     touch_gestures {
         resize_on_border_long_press = false
-        sensitivity = 3.0
+        sensitivity = 5.0
     }
     hyprexpo {
         columns = 3

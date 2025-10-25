@@ -2,13 +2,17 @@
     "autoUpdate": false,
     "autoUpdateNotification": false,
     "useQuickCss": true,
-    "themeLinks": [],
+    "themeLinks": [
+        "https://comfy-themes.github.io/Discord/betterdiscord/comfy.theme.css"
+    ],
     "eagerPatches": false,
-    "enabledThemes": [],
+    "enabledThemes": [
+        "system24.theme.css"
+    ],
     "enabledThemeLinks": [],
     "enableReactDevtools": true,
     "frameless": false,
-    "transparent": false,
+    "transparent": true,
     "winCtrlQ": false,
     "disableMinSize": false,
     "winNativeTitleBar": false,
@@ -1205,6 +1209,12 @@
         },
         "ZipPreview": {
             "enabled": false
+        },
+        "KeyboardNavigation": {
+            "enabled": false
+        },
+        "AutoZipper": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1218,7 +1228,7 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": false,
-        "settingsSyncVersion": 1760541732172
+        "settingsSyncVersion": 1761360366291
     },
     "ignoreResetWarning": false,
     "userCssVars": {},

@@ -50,7 +50,7 @@ inventory:
         resolution: 1920x1200
         refreshRate: '120'
         position: '0x0'
-        scale: 1
+        scale: 1.25
   dot-laptop:
     primaryDisplay: eDP-1
     displays:
