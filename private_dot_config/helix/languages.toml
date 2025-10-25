@@ -1,0 +1,78 @@
+[language-server.uwu_colors]
+command = "uwu_colors"
+
+[language-server.scls]
+command = "simple-completion-language-server"
+
+[language-server.scls.config]
+feature_words = true
+feature_snippets = true
+snippets_first = true
+feature_paths = true
+
+[language-server.qmlls]
+command = "qmlls6"
+
+[[language]]
+name = "__common__"
+scope = "source.__common__"
+file-types = []
+language-servers = [{ name = "uwu_colors" }]
+
+[[language]]
+name = "qml"
+scope = "source.qml"
+file-types = ["qml"]
+language-servers = ["scls", "uwu_colors", "qmlls"]
+
+[[language]]
+name = "toml"
+language-servers = ["scls", "uwu_colors", "tombi"]
+formatter = { command = "tombi", args = ["format", "-"] }
+auto-format = true
+
+[[language]]
+name = "json"
+language-servers = ["vscode-json-language-server", "scls", "uwu_colors"]
+formatter = { command = "prettier", args = ["--parser", "json"] }
+
+[[language]]
+name = "ini"
+scope = "source.ini"
+language-servers = ["uwu_colors", "scls"]
+file-types = [
+  "ini",
+  # Systemd unit files
+  "service",
+  "automount",
+  "device",
+  "mount",
+  "path",
+  "service",
+  "slice",
+  "socket",
+  "swap",
+  "target",
+  "timer",
+  # Podman quadlets
+  "container",
+  "volume",
+  "kube",
+  "network",
+  { glob = ".editorconfig" },
+  { glob = "rclone.conf" },
+  "properties",
+  "cfg",
+  "directory",
+  # === your specific .conf files or all ".conf" files ===
+  # { glob = "some_file.conf" },
+  "conf",
+  "kvconfig"
+]
+injection-regex = "ini"
+comment-token = "#"
+indent = { tab-width = 4, unit = "\t" }
+
+[[grammar]]
+name = "ini"
+source = { git = "https://github.com/justinmk/tree-sitter-ini", rev = "32b31863f222bf22eb43b07d4e9be8017e36fb31" }

@@ -1,0 +1,46 @@
+{
+  "QtQuick Rectangle": {
+    "prefix": "Rec",
+    "body": ["Rectangle {", "\tid: $0", "}"]
+  },
+
+  "Quickshell.Widgets WrapperRectangle": {
+    "prefix": "WR",
+    "body": ["WrapperRectangle {", "\tid: $1", "\t$0", "}"],
+    "description": ""
+  },
+
+  "QtQuick Item": {
+    "prefix": "Ite",
+    "body": ["Item {", "\tid: $1", "\t$0", "}"]
+  },
+
+  "Quickshell.Widgets WrapperItem": {
+    "prefix": "WI",
+    "body": ["WrapperItem {", "\tid: $1", "\t$0", "}"]
+  },
+
+  "QtQuick Behavior": {
+    "prefix": "Beh",
+    "body": [
+      "Behavior on ${1:property} {",
+      "\t${2|AnchorAnimation,ColorAnimation,NumberAnimation,ParentAnimation|}",
+      "\t$0",
+      "}"
+    ]
+  },
+
+  "QtQuick Animations Shortcut": {
+    "prefix": "ani",
+    "body": [
+      "${1|AnchorAnimation,ColorAnimation,NumberAnimation,ParentAnimation|} {",
+      "\t$0",
+      "}"
+    ]
+  },
+
+  "Common QML Imports": {
+    "prefix": "i.",
+    "body": "import ${1|QtCore,QtQuick,QtQml,QtQuick.Layouts,QtQuick.Effects,Quickshell,Quickshell.Bluetooth,Quickshell.DBusMenu,Quickshell.Hyprland,Quickshell.Io,Quickshell.Services.Greetd,Quickshell.Services.Mpris,Quickshell.Services.Notifications,Quickshell.Services.Pam,Quickshell.Services.Pipewire,Quickshell.Services.UPower,Quickshell.Wayland,Quickshell.Widgets}"
+  }
+}

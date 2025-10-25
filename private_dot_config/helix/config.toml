@@ -1,0 +1,22 @@
+[editor]
+bufferline = "multiple"
+line-number = "relative"
+cursorline = true
+true-color = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "block"
+
+[editor.auto-save]
+after-delay.enable = true
+after-delay.timeout = 5000
+
+[editor.inline-diagnostics]
+cursor-line = "warning"
+other-lines = "error"
+
+[editor.lsp]
+auto-signature-help = false
+display-messages = true
