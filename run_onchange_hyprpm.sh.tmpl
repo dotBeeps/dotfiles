@@ -1,9 +1,0 @@
-#!/bin/bash
-
-{{ range .hyprpm.repos }}
-hyprpm add {{.}}
-{{ end }}
-{{ range .hyprpm.plugins }}
-hyprpm enable {{.}}
-{{ end }}
-hyprpm reload
