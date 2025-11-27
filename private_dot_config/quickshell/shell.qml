@@ -22,9 +22,9 @@ Scope {
     id: root
 
 
-    StickerWall {
-        screen: Quickshell.screens[0]
-    }
+    // StickerWall {
+    //     screen: Quickshell.screens[0]
+    // }
 
     Variants {
         model: Quickshell.screens
@@ -64,10 +64,10 @@ Scope {
                 }
             }
             
-            SystemStateSwitcher {
-                screen: screenItem.modelData
-                actionState: 0
-            }
+            // SystemStateSwitcher {
+            //     screen: screenItem.modelData
+            //     actionState: 0
+            // }
         }
     }
 

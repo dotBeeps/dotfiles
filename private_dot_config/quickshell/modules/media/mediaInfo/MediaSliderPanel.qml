@@ -10,10 +10,7 @@ import qs.modules.media
 ClippingWrapperRectangle {
     id: root
     radius: Config.style.rounding.small
-    color: Config.activeColors.base.darker(1.5).alpha(.9)
     margin: Config.style.spacing.sm
-    leftMargin: Config.style.spacing.md
-    rightMargin: Config.style.spacing.md
 
 
     RowLayout {

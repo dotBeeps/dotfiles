@@ -1,8 +1,6 @@
 import QtQuick
 import QtQuick.Layouts
 import Quickshell
-import Quickshell.Hyprland
-import Quickshell.Widgets
 import qs.config
 import qs.services
 import qs.util
@@ -52,6 +50,8 @@ PanelWindow {
     property bool executing: false
     readonly property var currentState: states[actionState]
 
+    property bool bindHeld: false
+
     exclusionMode: ExclusionMode.Ignore
     color: "transparent"
 
@@ -82,8 +82,8 @@ PanelWindow {
     }
 
     BeepShellHyprShortcut {
-        description: "Power off held handler"
-        name: "power-long"
+        description: "Power off press handler"
+        name: "power-press"
         onPressed: {
             statePanel.executing = true;            
             switch (statePanel.actionState) {
@@ -111,8 +111,8 @@ PanelWindow {
     }
     
     BeepShellHyprShortcut {
-        description: "Power off handler"
-        name: "power"
+        description: "Power off release handler"
+        name: "power-release"
         onReleased: {
             if (!stateChangeTimeout.running) {    
                 if (statePanel.actionState >= 4) {
@@ -167,14 +167,15 @@ PanelWindow {
 
             bottomLeftRadius: Config.style.rounding.xl
             bottomRightRadius: Config.style.rounding.xl
-            Behavior on implicitWidth {
-                NumberAnimation {
-                    duration: 300
-                    onRunningChanged: {
-                       if (!running && statePanel.executing) {
-                           statePanel.actionState = 0;
-                       } 
-                    }
+
+            NumberAnimation {
+                target: progress
+                property: "implicitWidth"
+                duration: 1000
+                easing.type: Easing.InOutQuad
+
+                onFinished: {
+                    performAction()
                 }
             }
         }

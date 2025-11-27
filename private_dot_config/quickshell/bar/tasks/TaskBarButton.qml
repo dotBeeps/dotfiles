@@ -14,7 +14,7 @@ Button {
     implicitHeight: control.height
     implicitWidth: control.height - Config.style.spacing.sm
     hoverEnabled: true
-
+    
     Image {
         id: img
 

@@ -3,10 +3,12 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Wayland
 import qs.config
+import qs.modules.common
 
-PanelWindow {
+BeepsPanelWindow {
     id: register
-
+    blur: false
+    
     required property ShellScreen screenData
     property var possibleMessages: [["Activate 󰩃  Linux", "Go to Settings to activate 󰩃  Linux."], ["Deactivate 󰩃  Linux", "Why would you activate it?", "What does that even mean?"], ["Activate Lesbian 󰩃  Linux", "Become Sapphic to activate Lesbian 󰩃  Linux."], ["Unregistered HyperCam 2"], ["Pass the Activatema", "What?", "Go to Settings to activatema 󰩃  Linux lmaoooo."]]
     property var currentMessages: possibleMessages[Math.floor(Math.random() * possibleMessages.length)]
@@ -45,7 +47,7 @@ PanelWindow {
                 required property int index
 
                 text: modelData
-                color: Config.colors.themes["defaultTheme"].inactive
+                color: Config.activeColors.inactive
                 font.pointSize: index == 0 ? Config.style.fonts.pointSizeBase + 2 : Config.style.fonts.pointSizeBase
             }
 

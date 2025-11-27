@@ -6,8 +6,6 @@ abbr -a -- hx.c 'helix /home/dot/.config'
 abbr -a -- c.c 'cd /home/dot/.config/'
 
 if status is-interactive
-    # Starship custom prompt
-    starship init fish | source
     fastfetch
     # For jumping between prompts in foot terminal
     function mark_prompt_start --on-event fish_prompt

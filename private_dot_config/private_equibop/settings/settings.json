@@ -1,7 +1,7 @@
 {
-    "autoUpdate": false,
+    "autoUpdate": true,
     "autoUpdateNotification": false,
-    "useQuickCss": true,
+    "useQuickCss": false,
     "themeLinks": [
         "https://comfy-themes.github.io/Discord/betterdiscord/comfy.theme.css"
     ],
@@ -48,7 +48,7 @@
             "enabled": false
         },
         "ServerListAPI": {
-            "enabled": false
+            "enabled": true
         },
         "UserSettingsAPI": {
             "enabled": true
@@ -93,13 +93,16 @@
             "enabled": false
         },
         "BetterSettings": {
-            "enabled": false
+            "enabled": true,
+            "disableFade": false,
+            "organizeMenu": true,
+            "eagerLoad": true
         },
         "BetterUploadButton": {
             "enabled": false
         },
         "BiggerStreamPreview": {
-            "enabled": false
+            "enabled": true
         },
         "BlurNSFW": {
             "enabled": false
@@ -188,7 +191,7 @@
             "enabled": false
         },
         "FixYoutubeEmbeds": {
-            "enabled": false
+            "enabled": true
         },
         "ForceOwnerCrown": {
             "enabled": false
@@ -233,7 +236,8 @@
             "enabled": false
         },
         "InvisibleChat": {
-            "enabled": false
+            "enabled": false,
+            "savedPasswords": "password, Password"
         },
         "IrcColors": {
             "enabled": false
@@ -245,13 +249,19 @@
             "enabled": false
         },
         "LoadingQuotes": {
-            "enabled": false
+            "enabled": true,
+            "replaceEvents": true,
+            "enableDiscordPresetQuotes": false,
+            "additionalQuotes": "",
+            "additionalQuotesDelimiter": "|",
+            "enablePluginPresetQuotes": true
         },
         "MemberCount": {
             "enabled": false
         },
         "MentionAvatars": {
-            "enabled": false
+            "enabled": true,
+            "showAtSymbol": true
         },
         "MessageClickActions": {
             "enabled": false
@@ -337,9 +347,6 @@
         "PermissionsViewer": {
             "enabled": false
         },
-        "petpet": {
-            "enabled": false
-        },
         "PictureInPicture": {
             "enabled": false
         },
@@ -365,7 +372,7 @@
             "enabled": false
         },
         "ReadAllNotificationsButton": {
-            "enabled": false
+            "enabled": true
         },
         "RelationshipNotifier": {
             "enabled": false
@@ -464,7 +471,7 @@
             "enabled": false
         },
         "TypingTweaks": {
-            "enabled": true,
+            "enabled": false,
             "showAvatars": true,
             "showRoleColors": true,
             "alternativeFormatting": true
@@ -479,7 +486,7 @@
             "enabled": false
         },
         "UserMessagesPronouns": {
-            "enabled": true,
+            "enabled": false,
             "pronounsFormat": "LOWERCASE",
             "showSelf": true
         },
@@ -520,19 +527,20 @@
             "enabled": false
         },
         "WebKeybinds": {
-            "enabled": true
+            "enabled": false
         },
         "WebScreenShareFixes": {
             "enabled": true
         },
         "WhoReacted": {
-            "enabled": false
+            "enabled": true,
+            "avatarClick": false
         },
         "XSOverlay": {
             "enabled": false
         },
         "YoutubeAdblock": {
-            "enabled": true
+            "enabled": false
         },
         "AudioBookShelfRichPresence": {
             "enabled": false
@@ -547,7 +555,12 @@
             "enabled": false
         },
         "Anammox": {
-            "enabled": false
+            "enabled": true,
+            "dms": true,
+            "serverBoost": true,
+            "billing": true,
+            "gift": true,
+            "emojiList": true
         },
         "AtSomeone": {
             "enabled": false
@@ -625,7 +638,59 @@
             "enabled": false
         },
         "CustomSounds": {
-            "enabled": false
+            "enabled": false,
+            "activity_end": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_launch": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "activity_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "asmr_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "bit_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "bop_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "call_calling": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "call_ringing": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "clip_error": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "clip_save": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-down": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-right": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ddr-up": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "deafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "discodo": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "disconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ducky_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "hang_status_select": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "highfive_clap": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "highfive_whistle": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "human_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "lofi_message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mention3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message1": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message2": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "message3": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "mute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "overlayunlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_achievement_unlock": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_applause": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_enabled": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "poggermode_message_send": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ptt_start": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "ptt_stop": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "reconnect": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "robot_man": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stage_waiting": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_ended": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_started": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_user_joined": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "stream_user_left": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "success": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "undeafen": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "unmute": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_join": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_leave": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "user_moved": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}",
+            "vibing_wumpus": "{\"enabled\":false,\"selectedSound\":\"default\",\"volume\":100,\"useFile\":false}"
         },
         "CustomTimestamps": {
             "enabled": false
@@ -715,10 +780,20 @@
             "enabled": false
         },
         "GifCollections": {
-            "enabled": false
+            "enabled": true,
+            "itemPrefix": "gc-item:",
+            "collectionPrefix": "gc:",
+            "onlyShowCollections": false,
+            "stopWarnings": false,
+            "showCopyImageLink": false,
+            "preventDuplicates": false,
+            "defaultEmptyCollectionImage": "https://c.tenor.com/YEG33HsLEaIAAAAC/parksandrec-oops.gif",
+            "collectionsSortType": 1,
+            "collectionsSortOrder": "asc"
         },
         "GifRoulette": {
-            "enabled": false
+            "enabled": false,
+            "pingOwnerChance": true
         },
         "GitHubRepos": {
             "enabled": false
@@ -845,10 +920,13 @@
             "enabled": false
         },
         "MoreCommands": {
-            "enabled": false
+            "enabled": false,
+            "addFreakyEnding": true,
+            "uwuEveryMessage": false,
+            "uwuEverything": false
         },
         "MoreKaomoji": {
-            "enabled": false
+            "enabled": true
         },
         "MoreStickers": {
             "enabled": false
@@ -923,15 +1001,13 @@
             "enabled": false
         },
         "Quoter": {
-            "enabled": false
+            "enabled": false,
+            "userIdentifier": 0
         },
         "RandomVoice": {
             "enabled": false
         },
         "RemixMe": {
-            "enabled": false
-        },
-        "RepeatMessage": {
             "enabled": false
         },
         "ReplyPingControl": {
@@ -1116,7 +1192,24 @@
             "enabled": false
         },
         "MusicControls": {
-            "enabled": false
+            "enabled": false,
+            "hoverControls": false,
+            "ShowMusicNoteOnNoLyrics": true,
+            "LyricsPosition": "below",
+            "LyricsProvider": "Spotify",
+            "TranslateTo": "en",
+            "LyricsConversion": "None",
+            "FallbackProvider": true,
+            "ShowFailedToasts": true,
+            "LyricDelay": 0,
+            "showSpotifyControls": false,
+            "showSpotifyLyrics": false,
+            "useSpotifyUris": false,
+            "previousButtonRestartsTrack": true,
+            "showTidalControls": false,
+            "showTidalLyrics": false,
+            "showYoutubeMusicControls": false,
+            "YoutubeMusicApiUrl": "http://localhost:26538"
         },
         "Questify": {
             "enabled": false
@@ -1179,7 +1272,13 @@
             "enabled": false
         },
         "Animalese": {
-            "enabled": false
+            "enabled": false,
+            "volume": 0.5,
+            "speed": 1,
+            "pitch": 1,
+            "messageLengthLimit": 50,
+            "processOwnMessages": true,
+            "soundQuality": "high"
         },
         "Downloadify": {
             "enabled": false
@@ -1215,6 +1314,52 @@
         },
         "AutoZipper": {
             "enabled": false
+        },
+        "arRPCBun": {
+            "enabled": true
+        },
+        "SongLink": {
+            "enabled": false
+        },
+        "CleanUserArea": {
+            "enabled": false
+        },
+        "UniversalMention": {
+            "enabled": false
+        },
+        "Snowfall": {
+            "enabled": false
+        },
+        "Ghosted": {
+            "enabled": false,
+            "showIndicator": true,
+            "showDmIcons": true,
+            "exemptedChannels": "",
+            "scary": false
+        },
+        "PetPet": {
+            "enabled": false
+        },
+        "RepeatMessages": {
+            "enabled": false
+        },
+        "MessageNotifier": {
+            "enabled": false
+        },
+        "BetterUserArea": {
+            "enabled": false
+        },
+        "GlobalNicknames": {
+            "enabled": false
+        },
+        "RichMagnetLinks": {
+            "enabled": false
+        },
+        "VoiceRejoin": {
+            "enabled": false
+        },
+        "ExitSounds": {
+            "enabled": false
         }
     },
     "notifications": {
@@ -1228,9 +1373,13 @@
         "authenticated": false,
         "url": "https://cloud.equicord.org/",
         "settingsSync": false,
-        "settingsSyncVersion": 1761360366291
+        "settingsSyncVersion": 1764125409298
     },
     "ignoreResetWarning": false,
     "userCssVars": {},
-    "themeNames": {}
+    "themeNames": {},
+    "uiElements": {
+        "chatBarButtons": {},
+        "messagePopoverButtons": {}
+    }
 }

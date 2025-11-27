@@ -50,14 +50,14 @@ Singleton {
     }
 
     component ActiveArt: ClippingImage {
-        radius: Config.style.rounding.large
-        visible: Players.activePlayer && Players.activePlayer !== null
-        source: Players.activePlayer ? Players.activePlayer.trackArtUrl : ''
+        visible: (Players.activePlayer?.trackArtUrl ?? '') !== '' 
+        source: Players.activePlayer.trackArtUrl
         image.fillMode: Image.PreserveAspectFit
     }
 
     component ActiveIcon: ClippingIconImage {
         implicitSize: 24
+        visible: (Players.activePlayer?.desktopEntry ?? '') !== ''
         source: Quickshell.iconPath(Players.activePlayer.desktopEntry)
         radius: Config.style.rounding.full
     }

@@ -9,33 +9,46 @@ import qs.services
 
 StyledPopup {
     id: root
+    color: Config.activeColors.base.darker(1)
+    hyprOpacity: .95
 
     ColumnLayout {
         id: content
 
-        //anchors.left: parent.left
-        //anchors.right: parent.right
-        spacing: 8
+        spacing: Config.style.spacing.xs
 
         MediaInfo {
             Layout.fillWidth: true
-            Layout.leftMargin: Config.style.spacing.sm
-            Layout.topMargin: Config.style.spacing.sm
-            Layout.rightMargin: Config.style.spacing.sm
+            Layout.topMargin: Config.gaps.sm
+            Layout.rightMargin: Config.gaps.sm
+            Layout.leftMargin: Config.gaps.sm
         }
 
         MediaSliderPanel {
+            Layout.fillWidth: true
+            Layout.rightMargin: Config.gaps.sm
+            Layout.leftMargin: Config.gaps.sm
+            color: Config.activeColors.base.darker(1.67)
+
         }
 
         MprisControls {
             id: controls
-
-            Layout.fillWidth: false
-            Layout.topMargin: -Config.style.spacing.sm * 0.5
-            Layout.bottomMargin: Config.style.spacing.md
-            Layout.alignment: Qt.AlignHCenter
+            Layout.fillWidth: true
             pointSize: 18
+            Layout.rightMargin: Config.gaps.sm
+            Layout.leftMargin: Config.gaps.sm
+            radius: Config.style.rounding.small
             player: Players.activePlayer
+            color: Config.activeColors.base.darker(1.67)
+        }
+
+        MediaVolumePanel {
+            Layout.fillWidth: true
+            Layout.rightMargin: Config.gaps.sm
+            Layout.leftMargin: Config.gaps.sm
+            color: Config.activeColors.base.darker(1.67)
+            Layout.bottomMargin: Config.gaps.sm
         }
 
     }

@@ -6,9 +6,10 @@ import Quickshell.Wayland
 import Quickshell.Widgets
 import qs.config
 import qs.modules.bar
+import qs.modules.common
 import "tasks"
 
-PanelWindow {
+BeepsPanelWindow {
     id: bar
 
     required property ShellScreen screenData
@@ -19,7 +20,8 @@ PanelWindow {
     color: "transparent"
     implicitHeight: barShape.height
     exclusiveZone: Config.style.bar.height
-
+    blur: false
+    
     anchors {
         top: true
         left: true

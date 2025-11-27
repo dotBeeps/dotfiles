@@ -37,6 +37,10 @@ language-servers = ["vscode-json-language-server", "scls", "uwu_colors"]
 formatter = { command = "prettier", args = ["--parser", "json"] }
 
 [[language]]
+name = "fish"
+language-servers = ["fish-lsp", "scls", "uwu_colors"]
+
+[[language]]
 name = "ini"
 scope = "source.ini"
 language-servers = ["uwu_colors", "scls"]

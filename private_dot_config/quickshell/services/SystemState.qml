@@ -5,6 +5,28 @@ pragma Singleton
 Singleton {
     id: root
 
+    function powerAction(action) {
+    switch (action) {
+            case 0:
+                SystemState.suspend();
+                break;
+            case 1:
+                SystemState.bigPicture();
+                break;
+            case 2:
+                SystemState.suspend();                    
+                break;
+            case 3:
+                SystemState.restart();
+                break;
+            case 4:
+                SystemState.poweroff();
+                break;
+            default:
+                break;
+        }
+    }
+
     function poweroff() {
         poweroffProc.running = true;
     }

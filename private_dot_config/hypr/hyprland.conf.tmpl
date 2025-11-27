@@ -3,9 +3,7 @@
 ### MONITORS ###
 ################
 {{ range .hostSettings.displays }}
-{{ if get . "virtual" }}
-exec-once = hyprctl output create {{ .name }}
-{{ end }}
+{{ if get . "virtual" }}exec-once = hyprctl output create{{ .name }}{{ end }}
 monitor={{ .name }},{{ if hasKey . "resolution" }}{{ .resolution }}{{ if hasKey . "refreshRate"}}@{{ .refreshRate }}{{else}}preferred{{end}}{{end}},{{ if hasKey . "position" }}{{ .position }}{{else}}auto{{end}},{{if hasKey . "scale"}}{{ .scale }}{{else}}auto{{end}}{{if hasKey . "transform"}},transform,{{.transform}}{{end}}{{if hasKey . "mirror"}},mirror,{{.mirror}}{{end}}
 {{ end }}
 

@@ -15,6 +15,9 @@ Singleton {
     property var activeColors: colors.themes[colors.currentTheme]
     property alias style: settings.style
     property alias gaps: settings.style.spacing
+    property alias layerNamespace: settings.layerNamespace
+    property alias namespaceNoBlurTag: settings.namespaceNoBlurTag
+    readonly property string layerNamespaceNoBlur: layerNamespace + namespaceNoBlurTag
 
     FileView {
         id: fileView
@@ -36,7 +39,8 @@ Singleton {
             property CavaConfig cava
             property string primaryScreen: "DP-2"
             property Colors colors
-
+            property string layerNamespace: "beepshell"
+            property string namespaceNoBlurTag: "-noblur"
             cava: CavaConfig {
             }
 

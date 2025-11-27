@@ -16,5 +16,10 @@
     "hardwareVideoAcceleration": false,
     "arguments": "",
     "disableMinSize": true,
-    "splashBackground": "rgba(21, 23, 25, 0.784)"
+    "splashBackground": "rgba(21, 23, 25, 0.784)",
+    "hardwareAcceleration": true,
+    "customTitleBar": false,
+    "staticTitle": false,
+    "splashProgress": true,
+    "badgeOnlyForMentions": true
 }

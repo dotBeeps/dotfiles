@@ -21,14 +21,15 @@ WrapperRectangle {
 
         Repeater {
             model: taskbar.trayItems
-
+            
             TaskBarButton {
                 id: trayButton
                 Layout.fillHeight: true
-                required property var modelData
-            
+                required property SystemTrayItem modelData
+                
                 source: modelData.icon
                 onPressed: () => {
+                    console.log(modelData.id)
                     var pos = taskbar.barWindow.mapFromItem(trayButton, implicitWidth / 2, implicitHeight);
                     modelData.display(taskbar.barWindow, pos.x, pos.y);
                 }

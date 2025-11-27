@@ -1,3 +1,5 @@
+theme = "dot"
+
 [editor]
 bufferline = "multiple"
 line-number = "relative"

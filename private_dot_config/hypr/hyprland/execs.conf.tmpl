@@ -13,13 +13,11 @@ exec-once = mpris-proxy
 
 exec-once=/usr/lib/pam_kwallet_init
 
-exec-once=app2unit -- qs
-exec-once=waypaper -- restore
-exec-once=app2unit -- equibop --enable-features=UseOzonePlatform --ozone-platform=wayland
-exec-once=app2unit -- steam -silent
+exec-once=uwsm app -- qs
+exec-once=uwsm app -- equibop --enable-features=UseOzonePlatform --ozone-platform=wayland
+exec-once=uwsm app -- steam -silent
 {{ if eq .chezmoi.hostname "dotbox" }} 
 exec-once=hyprlock
 {{ end }}
 
-exec-once=systemd-inhibit --who="Hyprland" --why="powerbutton keybind" --what=handle-power-key --mode=block sleep infinity & echo $! > /tmp/.hyprland-systemd-inhibit
-exec-shutdown=kill -9 "$(cat /tmp/.hyprland-systemd-inhibit)"
+exec-once=waypaper -- restore

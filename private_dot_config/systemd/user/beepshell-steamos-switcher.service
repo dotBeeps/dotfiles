@@ -1,0 +1,9 @@
+[Unit]
+Description=Beepshell Steamos/Hyprland Session Switcher
+Requires=basic.target
+After=basic.target
+
+[Service]
+Type=simple
+Exec-Start=
+Exec-Start=/home/dot/.xsession

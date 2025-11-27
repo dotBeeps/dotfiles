@@ -8,6 +8,7 @@ ShowCopyToOtherSplitView=false
 ShowMoveToOtherSplitView=false
 
 [General]
+ConfirmClosingMultipleTabs=false
 DynamicView=true
 EditableUrl=true
 GlobalViewProps=false
@@ -36,7 +37,7 @@ MenuBar=Disabled
 IconSize=32
 
 [PreviewSettings]
-Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,avif,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,jxl,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,librsvg,svgthumbnail,webp-pixbuf,gdk-pixbuf-thumbnailer,gsf-office
+Plugins=ffmpegthumbnailer,appimagethumbnail,audiothumbnail,comicbookthumbnail,cursorthumbnail,djvuthumbnail,ebookthumbnail,exrthumbnail,directorythumbnail,imagethumbnail,jpegthumbnail,kraorathumbnail,windowsexethumbnail,windowsimagethumbnail,opendocumentthumbnail,svgthumbnail,webp-pixbuf,gsf-office
 
 [ViewPropertiesDialog]
 2 screens: Window-Maximized=true
