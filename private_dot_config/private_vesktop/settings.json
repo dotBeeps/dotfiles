@@ -9,5 +9,8 @@
     "spellCheckLanguages": [
         "en-US",
         "en"
-    ]
+    ],
+    "autoStartMinimized": false,
+    "clickTrayToShowHide": true,
+    "disableSmoothScroll": false
 }

@@ -29,7 +29,7 @@ Item {
 
             Text {
                 text: Players.activePlayer.trackTitle ?? ''
-                color: Config.activeColors.text
+                color: Config.colors.text
                 Layout.preferredHeight: parent.height / 2
                 Layout.fillWidth: true
                 verticalAlignment: Text.AlignBottom
@@ -45,7 +45,7 @@ Item {
 
             Text {
                 text: Players.activePlayer.trackArtist ?? ''
-                color: Config.activeColors.accent
+                color: Config.colors.accent
                 Layout.preferredHeight: parent.height / 2
                 Layout.fillWidth: true
                 verticalAlignment: Text.AlignTop

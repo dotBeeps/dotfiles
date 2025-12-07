@@ -61,4 +61,26 @@ Singleton {
         source: Quickshell.iconPath(Players.activePlayer.desktopEntry)
         radius: Config.style.rounding.full
     }
+    component ActiveArtist: Text {
+        text: Players.activePlayer?.trackArtist ?? ''
+        color: Config.colors.text
+        elide: Text.ElideMiddle
+        verticalAlignment: Text.Bottom
+        visible: text !== ''
+        font {
+            family: Config.style.fonts.mono
+            pointSize: 12
+        }
+    }
+    component ActiveTitle: Text {
+        text: Players.activePlayer?.trackTitle ?? ''
+        color: Config.colors.text
+        elide: Text.ElideMiddle
+        verticalAlignment: Text.Top
+        font {
+            family: Config.style.fonts.mono
+            pointSize: 16
+            weight: 600
+        }
+    }
 }

@@ -34,7 +34,7 @@ Item {
                 id: background
 
                 //anchors.fill: parent
-                color: Config.activeColors.base
+                color: Config.colors.base
                 radius: Config.style.rounding.medium
             }
 

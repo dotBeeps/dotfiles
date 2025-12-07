@@ -33,7 +33,7 @@
             "enabled": false
         },
         "MessageEventsAPI": {
-            "enabled": false
+            "enabled": true
         },
         "MessagePopoverAPI": {
             "enabled": false
@@ -165,7 +165,18 @@
             "enabled": false
         },
         "FakeNitro": {
-            "enabled": false
+            "enabled": false,
+            "enableEmojiBypass": true,
+            "emojiSize": 48,
+            "transformEmojis": false,
+            "enableStickerBypass": true,
+            "stickerSize": 160,
+            "transformStickers": false,
+            "transformCompoundSentence": false,
+            "enableStreamQualityBypass": false,
+            "useHyperLinks": false,
+            "hyperLinkText": "{{NAME}}",
+            "disableEmbedPermissionCheck": false
         },
         "FakeProfileThemes": {
             "enabled": false
@@ -569,7 +580,7 @@
         "authenticated": false,
         "url": "https://api.vencord.dev/",
         "settingsSync": false,
-        "settingsSyncVersion": 1764133964499
+        "settingsSyncVersion": 1764698376950
     },
     "uiElements": {
         "chatBarButtons": {},

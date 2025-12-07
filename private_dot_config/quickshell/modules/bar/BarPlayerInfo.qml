@@ -27,7 +27,7 @@ Item {
         background: Rectangle {
             id: buttonBg
 
-            color: Config.activeColors.highlight
+            color: Config.colors.highlight
             opacity: button.hovered ? 1 : 0
 
             Behavior on opacity {
@@ -43,9 +43,9 @@ Item {
 
     BarMediaPopout {
         shown: root.popoutShown
-        anchorItem: root
-        margins.bottom: -Config.gaps.xs
-        implicitWidth: button.width
+        anchor.window: QsWindow.window
+        anchor.rect.y: Config.style.bar.height + Config.gaps.xs
+        margin: Config.gaps.xs
     }
 
 }

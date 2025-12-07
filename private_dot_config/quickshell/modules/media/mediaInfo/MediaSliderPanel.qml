@@ -28,7 +28,7 @@ ClippingWrapperRectangle {
             text: mediaTime.timeStr
             verticalAlignment: Text.AlignVCenter
             font.family: Config.style.fonts.mono
-            color: Config.activeColors.text
+            color: Config.colors.text
         }
         VisualizerSlider {
             id: mediaSlider
@@ -47,7 +47,7 @@ ClippingWrapperRectangle {
             text: mediaTime.durationStr
             verticalAlignment: Text.AlignVCenter
             font.family: Config.style.fonts.mono
-            color: Config.activeColors.text
+            color: Config.colors.text
         }
         FrameAnimation {
                 running: Players.activePlayer?.playbackState == MprisPlaybackState.Playing

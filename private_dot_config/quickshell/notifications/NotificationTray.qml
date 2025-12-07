@@ -32,7 +32,7 @@ PanelWindow {
     Rectangle {
         id: container
 
-        color: Config.activeColors.base
+        color: Config.colors.base
         implicitHeight: content.implicitHeight
         implicitWidth: notificationTray.contentWidth
         bottomLeftRadius: 10

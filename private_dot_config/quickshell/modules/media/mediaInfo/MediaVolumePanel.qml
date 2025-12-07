@@ -9,7 +9,7 @@ ClippingWrapperRectangle {
     id: root
 
     radius: Config.style.rounding.small
-    color: Config.activeColors.base.darker(1.5).alpha(0.9)
+    color: Config.colors.base.darker(1.5).alpha(0.9)
     margin: Config.style.spacing.sm
     leftMargin: Config.style.spacing.md
     rightMargin: Config.style.spacing.md
@@ -29,7 +29,7 @@ ClippingWrapperRectangle {
                 iconButton.text: "󰓃"
                 iconButton.font.pointSize: Config.style.fonts.ptMd
                 slider.value: Audio.volume
-                slider.color: Config.activeColors.urgent
+                slider.color: Config.colors.accentSecondary
                 slider.onMoved: {
                     Audio.setVolume(slider.value);
                 }
@@ -51,7 +51,7 @@ ClippingWrapperRectangle {
                 iconButton.text: ""
                 iconButton.font.pointSize: Config.style.fonts.ptLg
                 slider.value: Audio.sourceVolume
-                slider.color: Config.activeColors.accent
+                slider.color: Config.colors.accent
                 slider.onMoved: {
                     Audio.setSourceVolume(slider.value);
                 }

@@ -27,7 +27,7 @@ Rectangle {
             }
             implicitWidth: root.pointSize *1.25
             hoverEnabled: root.player?.shuffleSupported
-            color: hoverEnabled ? hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+            color: hoverEnabled ? hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
             onClicked: () => {
                 if (root.player?.shuffleSupported)
                     root.player.shuffle = !root.player.shuffle
@@ -42,7 +42,7 @@ Rectangle {
             implicitWidth: root.pointSize *1.25
             hoverEnabled: !!root.player?.loopSupported
             visible: !!root.player?.loopSupported
-            color: hoverEnabled ? root.player.loopState !== MprisLoopState.None || hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+            color: hoverEnabled ? root.player.loopState !== MprisLoopState.None || hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
             onClicked: () => {
                 if (root.player?.loopSupported)
                     root.player.loopState = root.player.loopState === MprisLoopState.None ? MprisLoopState.Track : MprisLoopState.None
@@ -61,7 +61,7 @@ Rectangle {
             }
             implicitWidth: root.pointSize *1.25
             hoverEnabled: root.player?.canGoPrevious
-            color: hoverEnabled ? hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+            color: hoverEnabled ? hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
         
             onClicked: () => {
                 if (root.player?.canGoPrevious)
@@ -78,7 +78,7 @@ Rectangle {
                 hoverEnabled: root.player?.canControl
                 implicitWidth: root.pointSize*1.25
             
-                color: hoverEnabled ? hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+                color: hoverEnabled ? hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
                 onClicked: () => {
                     if (root.player?.canControl)
                         root.player.stop();
@@ -94,7 +94,7 @@ Rectangle {
                 }
                 implicitWidth: root.pointSize*1.25
                 hoverEnabled: root.player?.canPause || root.player?.canPlay
-                color: hoverEnabled ? hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+                color: hoverEnabled ? hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
                 onPressed: () => {
                     if (root.player?.isPlaying && root.player?.canPause)
                         root.player.pause();
@@ -110,7 +110,7 @@ Rectangle {
                 }
                 implicitWidth: root.pointSize*1.25
                 hoverEnabled: root.player?.canGoNext
-                color: hoverEnabled ? hovered ? Config.activeColors.accent : Config.activeColors.text : Config.activeColors.inactive
+                color: hoverEnabled ? hovered ? Config.colors.accent : Config.colors.text : Config.colors.inactive
                 onClicked: () => {
                     if (root.player?.canGoNext)
                         root.player.next();

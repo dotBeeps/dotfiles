@@ -47,7 +47,7 @@ BeepsPanelWindow {
                 required property int index
 
                 text: modelData
-                color: Config.activeColors.inactive
+                color: Config.colors.highlight
                 font.pointSize: index == 0 ? Config.style.fonts.pointSizeBase + 2 : Config.style.fonts.pointSizeBase
             }
 

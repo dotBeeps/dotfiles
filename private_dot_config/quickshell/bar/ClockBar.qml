@@ -16,7 +16,7 @@ WrapperRectangle {
 
             Text {
                 text: Time.date
-                color: Config.activeColors.text
+                color: Config.colors.text
 
                 font {
                     family: Config.style.fonts.mono
@@ -30,7 +30,7 @@ WrapperRectangle {
         Rectangle {
             implicitHeight: parent.height * 0.75
             implicitWidth: 1
-            color: Config.activeColors.text
+            color: Config.colors.text
             opacity: 0.65
         }
 
@@ -40,7 +40,7 @@ WrapperRectangle {
 
             Text {
                 text: Time.time
-                color: Config.activeColors.text
+                color: Config.colors.text
 
                 font {
                     family: Config.style.fonts.mono

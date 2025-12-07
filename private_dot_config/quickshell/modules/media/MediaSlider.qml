@@ -30,7 +30,7 @@ Slider {
 
             visible: false
             anchors.fill: visualizer
-            color: Config.activeColors.inactive
+            color: Config.colors.inactive
             implicitWidth: bgItem.width
             width: root.availableWidth
 
@@ -40,7 +40,7 @@ Slider {
                 width: visMouseArea.containsMouse ? visMouseArea.mouseX : width
                 height: parent.height
                 opacity: visMouseArea.containsMouse ? 0.8 : 0
-                color: Config.activeColors.text
+                color: Config.colors.text
 
                 Behavior on opacity {
                     NumberAnimation {
@@ -56,7 +56,7 @@ Slider {
 
                 width: root.visualPosition * parent.width
                 height: parent.height
-                color: Config.activeColors.accent
+                color: Config.colors.accent
             }
 
         }
@@ -83,7 +83,7 @@ Slider {
         visible: !!Cava.values
         implicitWidth: 2
         implicitHeight: Cava.values ? (2 + Cava.values[Math.floor(root.to !== 0 ? (root.value / root.to) * Cava.values.length : Cava.values.length - 1)] * visualizer.height) * 1.25 : 0
-        color: Config.activeColors.highlightAccent
+        color: Config.colors.accent
     }
 
 }

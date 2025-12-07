@@ -82,12 +82,12 @@ BeepsPanelWindow {
 
                 GradientStop {
                     position: 0
-                    color: Config.activeColors.base
+                    color: Config.colors.base
                 }
 
                 GradientStop {
                     position: 0.55
-                    color: Config.activeColors.base
+                    color: Config.colors.base
                 }
 
                 GradientStop {
@@ -124,7 +124,7 @@ BeepsPanelWindow {
                 Rectangle {
                     implicitHeight: parent.height * 0.75
                     implicitWidth: 1
-                    color: Config.activeColors.text
+                    color: Config.colors.text
                     opacity: 0.65
                     Layout.rightMargin: 10
                 }

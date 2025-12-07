@@ -2,22 +2,50 @@ import Quickshell
 import Quickshell.Io
 import qs.util
 pragma Singleton
+import QtQuick
 
 Singleton {
     id: root
 
     property alias colorConfig: settings.colors
     property alias cava: settings.cava
-    property alias colors: settings.colors
+    readonly property alias colorSettings: settings.colors
     property alias notifications: settings.notifications
     property alias primaryScreen: settings.primaryScreen
     property alias loaded: fileView.loaded
-    property var activeColors: colors.themes[colors.currentTheme]
     property alias style: settings.style
     property alias gaps: settings.style.spacing
     property alias layerNamespace: settings.layerNamespace
     property alias namespaceNoBlurTag: settings.namespaceNoBlurTag
     readonly property string layerNamespaceNoBlur: layerNamespace + namespaceNoBlurTag
+
+    property var colors: {
+        base: "#000000"
+        dark: "#000000"
+        highlight: "#000000"
+        highlightBright: "#000000"
+        inactive: "#000000"
+        outline: "#000000"
+        shadow: "#000000"
+        text: "#000000"
+        accentPrimary: "#000000"
+        accentSecondary: "#000000"
+    }
+
+    Component.onCompleted: {
+        colors = Qt.binding(() => {
+            const colorArr = Object.create(null);
+            const currentTheme = colorSettings.themes[colorSettings.currentTheme]
+            for (const key in currentTheme) {
+                if (key === "objectName" || key.includes('Changed')) {
+                    continue;
+                }
+                const colorName = currentTheme[key]
+                colorArr[key] = Qt.color((colorSettings.palettes[colorSettings.currentPalette][colorName] || colorName || "#FFFFFF"))
+            }
+            return colorArr;
+        })
+    }
 
     FileView {
         id: fileView

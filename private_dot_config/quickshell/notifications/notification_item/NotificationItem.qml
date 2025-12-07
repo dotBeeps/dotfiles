@@ -14,7 +14,7 @@ Rectangle {
     property string mainImage: notification.image ? notification.image : hasAppIcon ? Quickshell.iconPath(notification.appIcon) : ""
 
     opacity: 0
-    color: notiMouseArea.containsMouse ? Config.activeColors.highlightOverlay : "transparent"
+    color: notiMouseArea.containsMouse ? Config.colors.highlight.alpha(.2) : "transparent"
     Layout.fillWidth: true
     Layout.preferredHeight: notifLayout.implicitHeight
     radius: 10

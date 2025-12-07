@@ -13,7 +13,7 @@ RowLayout {
 
     Text {
         text: root.appName
-        color: Config.activeColors.inactive
+        color: Config.colors.inactive
 
         font {
             family: Config.style.fonts.mono

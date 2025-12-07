@@ -1,85 +1,102 @@
 {
-    "cava": {
-        "general": {
-            "autosens": 1,
-            "bars": 22,
-            "framerate": 60,
-            "higher_cutoff_freq": 12000,
-            "lower_cutoff_freq": 50,
-            "sensitivity": 100
-        },
-        "output": {
-            "ascii_max_range": 100,
-            "bit_format": "8bit",
-            "channels": "mono",
-            "data_format": "ascii",
-            "method": "raw",
-            "mono_option": "average"
-        },
-        "smoothing": {
-            "monstercat": 0,
-            "noise_reduction": 40
-        }
+  "cava": {
+    "general": {
+      "autosens": 1,
+      "bars": 22,
+      "framerate": 60,
+      "higher_cutoff_freq": 12000,
+      "lower_cutoff_freq": 50,
+      "sensitivity": 100
     },
-    "colors": {
-        "currentTheme": "defaultTheme",
-        "themes": {
-            "defaultTheme": {
-                "accent": "#86cecb",
-                "base": "#FC20272f",
-                "baseSolid": "#20272f",
-                "dark": "#f20c0f12",
-                "highlight": "#2b3b4a",
-                "highlightAccent": "#a1f9f5",
-                "highlightOverlay": "#10e7edf2",
-                "inactive": "#a0d9dee2",
-                "outline": "#d9dee2",
-                "shadow": "#232230",
-                "text": "#e7edf2",
-                "urgent": "#e087b4"
-            }
-        }
+    "output": {
+      "ascii_max_range": 100,
+      "bit_format": "8bit",
+      "channels": "mono",
+      "data_format": "ascii",
+      "method": "raw",
+      "mono_option": "average"
     },
-    "notifications": {
-        "defaults": {
-            "app": "",
-            "mainIcon": "app",
-            "showAppHint": true,
-            "timeout": 5000
-        },
-        "overrides": [
-        ]
-    },
-    "primaryScreen": "{{ .hostSettings.primaryDisplay }}",
-    "style": {
-        "bar": {
-            "fontSize": 16,
-            "height": 50,
-            "opacity": 0.9,
-            "radius": 20
-        },
-        "fonts": {
-            "mono": "Monofur Nerd Font Mono",
-            "pointSizeBase": 14,
-            "propo": "Monofur Nerd Font Propo",
-            "symbols": "Symbols Nerd Font",
-            "symbolsMono": "Symbols Nerd Font Mono"
-        },
-        "rounding": {
-            "large": 20,
-            "medium": 14,
-            "scale": 1,
-            "small": 10,
-            "xl": 28,
-            "xs": 8
-        },
-        "spacing": {
-            "lg": 32,
-            "md": 20,
-            "scale": 1,
-            "sm": 14,
-            "xl": 46,
-            "xs": 8
-        }
+    "smoothing": {
+      "monstercat": 0,
+      "noise_reduction": 40
     }
+  },
+  "colors": {
+    "currentTheme": "dotBeeps",
+    "currentPalette": "dotBeeps",
+    "palettes": {
+      "dotBeeps": {
+        "lavender": "#997DCE",
+        "pink": "#E087B4",
+        "peach": "#F7BF8B",
+        "yellow": "#FFEF96",
+        "green": "#D1EDAD",
+        "skyblue": "#B0E8E5",
+        "blue": "#6295CE",
+        "gray": "#54667B",
+        "base": "#20272F",
+        "mantle": "#161B21",
+        "crust": "#0C0F12",
+        "mid": "#B2BDCA",
+        "light": "#D1D8E0",
+        "lighter": "#DDE2E9",
+        "lightest": "#EDF0F3"
+      }
+    },
+    "themes": {
+      "dotBeeps": {
+        "base": "base",
+        "dark": "crust",
+        "highlight": "gray",
+        "highlightBright": "mid",
+        "inactive": "skyblue",
+        "outline": "light",
+        "shadow": "mantle",
+        "text": "lightest",
+        "accentPrimary": "skyblue",
+        "accentSecondary": "pink"
+      }
+    }
+  },
+  "notifications": {
+    "defaults": {
+      "app": "",
+      "mainIcon": "app",
+      "showAppHint": true,
+      "timeout": 5000
+    },
+    "overrides": []
+  },
+  "primaryScreen": "{{ .hostSettings.primaryDisplay }}",
+  "style": {
+    "bar": {
+      "fontSize": 16,
+      "height": 50,
+      "opacity": 0.9,
+      "radius": 20
+    },
+    "fonts": {
+      "mono": "Monofur Nerd Font Mono",
+      "pointSizeBase": 14,
+      "propo": "Monofur Nerd Font Propo",
+      "symbols": "Symbols Nerd Font",
+      "symbolsMono": "Symbols Nerd Font Mono"
+    },
+    "rounding": {
+      "large": 20,
+      "medium": 14,
+      "scale": 1,
+      "small": 10,
+      "xl": 28,
+      "xs": 8
+    },
+    "spacing": {
+      "lg": 32,
+      "md": 20,
+      "scale": 1,
+      "sm": 14,
+      "xl": 46,
+      "xs": 8
+    }
+  }
 }

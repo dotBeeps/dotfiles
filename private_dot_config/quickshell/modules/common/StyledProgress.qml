@@ -17,7 +17,7 @@ Rectangle {
         color: root.innerColor
 
         Rectangle {
-            color: Config.activeColors.accent
+            color: Config.colors.accent
             radius: parent.radius
             implicitWidth: parent.width * root.progress + 0.5 * height
 

@@ -7,7 +7,7 @@ Text {
     text: "󰩃"
     verticalAlignment: Text.AlignVCenter
     horizontalAlignment: Text.AlignHCenter
-    color: Config.activeColors.text
+    color: Config.colors.text
     font.family: Config.style.fonts.symbols
     font.pointSize: 18
 }

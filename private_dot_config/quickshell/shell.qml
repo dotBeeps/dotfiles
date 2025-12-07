@@ -22,10 +22,6 @@ Scope {
     id: root
 
 
-    // StickerWall {
-    //     screen: Quickshell.screens[0]
-    // }
-
     Variants {
         model: Quickshell.screens
 
@@ -55,19 +51,6 @@ Scope {
 
             }
 
-            Loader {
-                active: screenItem.modelData?.name === 'DP-3'
-                sourceComponent: Item {
-                    MediaWindow {
-                        screen: screenItem.modelData
-                    }
-                }
-            }
-            
-            // SystemStateSwitcher {
-            //     screen: screenItem.modelData
-            //     actionState: 0
-            // }
         }
     }
 

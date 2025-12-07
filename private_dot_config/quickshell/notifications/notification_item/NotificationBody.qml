@@ -27,7 +27,7 @@ RowLayout {
 
         Text {
             text: root.notification.summary
-            color: Config.activeColors.inactive
+            color: Config.colors.inactive
             verticalAlignment: Text.AlignTop
             Layout.fillHeight: false
             Layout.fillWidth: true
@@ -43,7 +43,7 @@ RowLayout {
         Text {
             text: root.notification.body
             elide: Text.ElideRight
-            color: Config.activeColors.text
+            color: Config.colors.text
             Layout.fillHeight: true
             Layout.fillWidth: true
             maximumLineCount: 6

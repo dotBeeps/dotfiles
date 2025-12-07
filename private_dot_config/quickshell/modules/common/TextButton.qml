@@ -21,7 +21,7 @@ Button {
         anchors.fill: root
         horizontalAlignment: Text.AlignHCenter
         verticalAlignment: Text.AlignVCenter
-        color: root.active ? Config.activeColors.urgent : (root.hovered || root.hint) ? Config.activeColors.text : Config.activeColors.inactive
+        color: root.active ? Config.colors.accentSecondary : (root.hovered || root.hint) ? Config.colors.text : Config.colors.inactive
 
         Behavior on color {
             ColorAnimation {

@@ -18,7 +18,7 @@ ClippingRectangle {
         anchors.verticalCenter: parent.verticalCenter
         implicitWidth: 1
         implicitHeight: 0.5 * parent.height
-        color: Config.activeColors.inactive
+        color: Config.colors.inactive
         opacity: 0.65
     }
 
@@ -27,7 +27,7 @@ ClippingRectangle {
         anchors.verticalCenter: parent.verticalCenter
         implicitWidth: 1
         implicitHeight: 0.5 * parent.height
-        color: Config.activeColors.inactive
+        color: Config.colors.inactive
         opacity: 0.65
     }
 
@@ -38,7 +38,7 @@ ClippingRectangle {
         anchors.verticalCenter: parent.verticalCenter
         anchors.horizontalCenter: parent.horizontalCenter
         text: Hyprland.activeToplevel?.wayland?.title ?? Hyprland.activeToplevel?.title ?? "Hi Dot!"
-        color: Config.activeColors.text
+        color: Config.colors.text
         elide: Text.ElideRight
         font.family: Config.style.fonts.mono
         font.pointSize: Config.style.bar.fontSize

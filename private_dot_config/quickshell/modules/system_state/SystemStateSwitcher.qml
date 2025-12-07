@@ -25,25 +25,25 @@ PanelWindow {
         "open": true,
         "icon": "󰊴",
         "text": "gamemode?",
-        "color": Config.activeColors.urgent.alpha(0.9),
+        "color": Config.colors.accentSecondary.alpha(0.9),
         "command": "gamescope steam"
     }, {
         "open": true,
         "icon": "󰤄",
         "text": "suspend?",
-        "color": Config.activeColors.base.alpha(0.9),
+        "color": Config.colors.base.alpha(0.9),
         "command": "echo 'suspend'"
     }, {
         "open": true,
         "icon": "󰜉",
         "text": "restart?",
-        "color": Config.activeColors.urgent.alpha(0.9),
+        "color": Config.colors.accentSecondary.alpha(0.9),
         "command": "echo 'restart'"
     }, {
         "open": true,
         "icon": "󰐥",
         "text": "power off?",
-        "color": Config.activeColors.accent.alpha(0.9),
+        "color": Config.colors.accent.alpha(0.9),
         "command": "poweroff"
     }]
     property real actionState: 0
@@ -163,7 +163,7 @@ PanelWindow {
 
             implicitWidth: statePanel.executing ? parent.width : 0
 
-            color: Config.activeColors.base.alpha(.10)
+            color: Config.colors.base.alpha(.10)
 
             bottomLeftRadius: Config.style.rounding.xl
             bottomRightRadius: Config.style.rounding.xl
